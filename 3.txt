@@ -1,0 +1,361 @@
+Risk category and sub-category,Ref.,Question,Risk Scores,Justification
+
+1. Description of the AI Technology,,,,"Please provide comprehensive explanations with supporting evidence. As the AI solution owner, you are responsible for ensuring completeness and accuracy of all information provided."
+
+AI Technology Purpose,1.1.1,"Articulate the purpose of the AI Technology/Model including its primary business objective, strategic alignment with organizational goals, specific business problems it addresses, and quantifiable expected benefits. Detail how this solution addresses specific business needs that could not be addressed through conventional means.",1,
+
+Development Ownership,1.1.2,"Document the desk/team that developed the AI technology, including organizational structure, reporting lines, team composition, relevant expertise in AI/ML implementations, and previous experience with similar technologies. Detail any external vendors or partners involved in development and their governance framework.",1,
+
+Target User Assessment,1.1.3,"Identify the target users and deployment regions for the AI Technology, including regulatory environments, language requirements, cultural factors, data privacy implications, and adoption challenges for each deployment region. Document how region-specific risks have been identified and mitigated.",1,
+
+User Onboarding,1.1.4,"Provide the comprehensive user onboarding strategy, including training methodologies, documentation standards, support mechanisms, and competency verification processes for end users. Detail the approach for assessing and maintaining user proficiency with the AI Technology.",1,
+
+Operational Integration,1.1.5,"Outline how the AI Technology will be integrated within existing business processes, including integration points, dependencies, change management requirements, training needs, and performance expectations under normal and peak operational conditions. Document operational risks and mitigation strategies.",1,
+
+Business Context Analysis,1.1.6,"Analyze the broader business context in which this AI Technology will operate, including market conditions, competitive landscape, regulatory environment, and organizational readiness. Detail how this solution addresses specific business challenges and the business metrics that will measure success.",1,
+
+Application Scope Definition,1.1.7,"Provide a well-articulated application scope detailing exactly what the AI Technology will and will not do, including functional boundaries, use case specifications, explicit exclusions, integration requirements, and scaling considerations. Document how these boundaries were determined and communicated.",1,
+
+Technical Architecture Documentation,1.1.8,"Detail the technical implementation architecture of the AI model, including framework selection, infrastructure requirements, deployment methodology, component interaction, data flow, API specifications, security measures, and scalability considerations. Explain how this architecture supports business requirements.",1,
+
+Development Methodology Documentation,1.1.9,"Document the development methodology utilized for this AI Technology, including development lifecycle approach, validation strategy, quality assurance framework, testing protocols, code review procedures, and release management process. Detail how development standards were established and enforced.",1,
+
+Business Requirement Alignment,1.1.10,"Verify alignment between business requirements and AI Technology capabilities, including requirement-gathering methodology, traceability matrix, validation process, and stakeholder sign-off procedures. Document the process for identifying and addressing requirement gaps or misalignments.",1,
+
+Assumptions and Limitations,,,, 
+
+Key Assumptions Documentation,1.2.1,"Document all key assumptions made during model development with their corresponding implications and justifications, including data representativeness, problem formulation, algorithm selection, hyperparameter choice, business environment stability, and regulatory interpretation. Detail how these assumptions were validated and reassessment processes.",2,
+
+Data Source Limitation Analysis,1.2.2,"Analyze any single-source or limited-source data dependencies. For instance, if using a single source of news/data (e.g., Bloomberg terminal), assess implications for potentially missing risk events or information. Quantify potential blind spots, business impact, and rationale for not selecting alternative data sources.",2,
+
+Statistical Assumption Validation,1.2.3,"Identify and validate all statistical assumptions underlying the model, including distribution assumptions, independence assumptions, stationarity assumptions, and other mathematical premises. Document testing methodologies employed to validate these assumptions and contingency plans if assumptions prove invalid.",2,
+
+Domain Assumption Sourcing,1.2.4,"Document all domain-specific assumptions regarding business rules, market behavior, user interaction patterns, or expert knowledge. Detail how these assumptions were sourced, validated, and incorporated into the model, including subject matter expert input and validation methodology.",2,
+
+Regional Limitation Assessment,1.2.5,"Assess known geographical or regional limitations of the model, including language constraints, market-specific data limitations, regulatory compliance gaps, and cultural context limitations. Quantify the potential impact on model performance and document mitigation strategies for these regional limitations.",2,
+
+Temporal Limitation Analysis,1.2.6,"Analyze temporal limitations of the model, including historical data scope limitations, seasonality effects, trending dependencies, time-sensitivity of data, and projection limitations. Document how these temporal factors are addressed in model design and the processes for updating as temporal conditions change.",2,
+
+Output Bias Comprehensive Assessment,1.2.7,"Conduct a comprehensive bias analysis of potential model outputs, including biases towards specific organizations, regions, languages, or data types. Categorize each identified bias by severity (High/Medium/Low), potential business impact, and reputational risk. Document monitoring and remediation strategies.",3,
+
+Sensitivity Analysis Documentation,1.2.8,"Provide a detailed sensitivity analysis of model performance relative to key assumptions. Identify which assumptions, if violated, would most significantly impact model performance. Quantify expected performance degradation and business impact under various assumption violation scenarios and document triggering indicators.",2,
+
+Mitigation Controls Framework,1.2.9,"Document all implemented controls, guardrails, and mitigation strategies addressing identified limitations, including monitoring mechanisms, override protocols, validation thresholds, alerting systems, review processes, and contingency plans. Detail testing and validation methodology for these controls under various scenarios.",2,
+
+Limitation Communication Strategy,1.2.10,"Establish processes for documenting, communicating, and incorporating model limitations into business processes. Detail how limitations are reflected in model governance, user training, and operational procedures. Document disclosure mechanisms ensuring transparency regarding model limitations to relevant stakeholders.",2,
+
+Assumption Update Procedure,1.2.11,"Establish procedures for updating assumptions as business conditions, data characteristics, or regulatory requirements change. Document triggers for assumption reassessment, change documentation methodology, validation requirements, and governance oversight for assumption modifications.",2,
+
+Model Adaptability Assessment,1.2.12,"Assess the adaptability of the model to changing conditions, including mechanisms allowing the model to remain effective as business requirements evolve. Document the timeline for incorporating new assumptions or limitations and the testing framework that validates model adaptability.",2,
+
+Inputs Assessment,,,, 
+
+Input Parameters Comprehensive Inventory,1.3.1,"Provide a comprehensive inventory of all AI Technology inputs, including data sources, structured fields, unstructured data, reference data, market data, configuration parameters, and triggering conditions. For each input, detail the source, format, frequency, quality controls, criticality to model performance, and governance framework.",2,
+
+Pre-processing Requirements Documentation,1.3.2,"Document all data pre-processing requirements, including cleansing methodologies, normalization techniques, tokenization processes, named entity recognition, feature engineering steps, data transformation pipelines, and quality assurance checks. Detail validation, monitoring, and governance controls to prevent pre-processing drift.",2,
+
+Opaque Parameters Governance,1.3.3,"Identify all opaque parameters or expert judgments incorporated in the model. For each parameter, document derivation methodology, validation approach, governance controls, review frequency, authorized modifiers, documentation requirements, and impact on model outcomes. Detail the change control process.",3,
+
+Parameter Update Governance Framework,1.3.4,"Establish a governance framework for parameter updates, including authorization protocols, testing requirements, validation methodologies, documentation standards, version control procedures, and audit trails. Document update frequency, triggering events, effectiveness measures, and rollback procedures.",2,
+
+Update Frequency Justification Analysis,1.3.5,"Provide detailed justification for the update frequency of model parameters and expert judgments, including business cycle considerations, market volatility factors, data refresh rates, model drift detection, and alignment with business decision timeframes. Document the analysis supporting the established frequency.",2,
+
+RAG Implementation Details,1.3.6,"If Retrieval-Augmented Generation (RAG) is used, provide comprehensive technical details including retrieval methodology, knowledge source selection, integration approach, relevance ranking, context incorporation, query formulation, and performance metrics. Document effectiveness measurement methodology and governance controls.",2,
+
+Internal Data Source Security,1.3.7,"Catalog all XYZ internal data sources (Sharepoint, Jira, Gitlab, Confluence, etc.) utilized by the model. For each source, detail access controls, security measures, data lineage, quality assurance, refresh mechanisms, backup procedures, and compliance status. Document data consistency and accuracy controls.",2,
+
+Feeder Models Integration Framework,1.3.8,"Identify all feeder AI Models or Agents (internal or third-party) whose outputs are used by this AI Model. For each dependency, document integration methodology, data exchange format, quality controls, dependency management, failure handling, version compatibility, and performance monitoring. Detail contingency plans.",3,
+
+Data Quality Management System,1.3.9,"Establish a comprehensive framework for ensuring input data quality, including quality metrics, monitoring frequency, anomaly detection, remediation procedures, quality thresholds, validation checks, and escalation protocols. Document the methodology for identifying, addressing, and preventing data quality issues.",2,
+
+Input Validation Comprehensive Methodology,1.3.10,"Document methodologies for validating inputs, including range checks, consistency validations, reference data comparison, anomaly detection, trend analysis, and cross-validation. Detail the handling and remediation of validation failures, effectiveness metrics, and intervention thresholds.",2,
+
+Input Drift Monitoring,1.3.11,"Implement systems to detect and address input drift, including metrics and thresholds for identifying significant shifts in input distributions or characteristics. Document response procedures, governance controls, assessment frequency, and reporting mechanisms for drift findings.",3,
+
+Input Lineage Documentation,1.3.12,"Establish comprehensive input data lineage tracking, documenting the origin, transformations, and usage of all input data. Detail how lineage information is maintained and made available for audit and governance purposes, including controls ensuring lineage completeness and accuracy.",2,
+
+Input Security Controls,1.3.13,"Implement appropriate security controls for all inputs, protecting data confidentiality, integrity, and availability throughout the input lifecycle. Document testing and validation methodology, compliance requirements, and verification procedures for input security controls.",3,
+
+Input Change Management,1.3.14,"Establish a change management process for inputs, including procedures governing the addition, modification, or removal of input sources or parameters. Document testing and validation requirements, documentation standards, and stakeholder communication protocols for input changes.",2,
+
+Manual Input Controls,1.3.15,"Identify any manual inputs to the model and establish appropriate controls, including validation checks, authorization requirements, documentation standards, error prevention mechanisms, and segregation of duties for manual input processes.",3,
+
+Calibration Assessment,,,, 
+
+Calibration Comprehensive Methodology,1.4.1,"Document the calibration methodology for AI Technology parameters and/or methodology, including calibration objectives, parameter selection criteria, optimization techniques, validation approaches, performance metrics, and recalibration triggers. Detail the documentation standards, governance framework, and effectiveness testing.",2,
+
+Calibration Implementation Specifications,1.4.2,"Detail the technical implementation of the calibration process, including algorithmic approach, optimization techniques, convergence criteria, processing requirements, automation level, and execution frequency. Provide supporting rationale for the selected implementation approach and assessment of alternatives.",2,
+
+Calibration Frequency Determination,1.4.3,"Specify and justify the frequency of model calibration activities, including analysis of sensitivity to market conditions, data refresh considerations, model drift patterns, business cycle alignment, and operational constraints. Document the methodology for determining appropriate calibration frequency and triggers for out-of-cycle calibration.",2,
+
+External Knowledge Integration Methodology,1.4.4,"Document how external knowledge is integrated into the model, including knowledge sources, selection criteria, integration methodology, quality assurance, and maintenance procedures. Detail the quality and relevance assessment methodology and governance controls for external knowledge integration.",2,
+
+Fine-tuning Comprehensive Process,1.4.5,"If applicable, document the model fine-tuning process, including dataset selection, data preparation, training methodology, hyperparameter optimization, convergence criteria, validation approach, and performance evaluation. Detail the controls preventing overfitting and data contamination and the governance framework.",2,
+
+Calibration Validation Framework,1.4.6,"Establish a validation process for calibration effectiveness, including validation dataset selection, performance metrics, acceptance criteria, comparative analysis, and statistical testing. Document how validation results are incorporated into governance and the decision criteria for calibration acceptance or rejection.",2,
+
+Parameter Sensitivity Analysis,1.4.7,"Conduct and document a sensitivity analysis of model performance to calibration parameters, identifying which parameters have the most significant impact on model performance and business outcomes. Detail how this sensitivity information is used in calibration governance and risk management.",3,
+
+Calibration Documentation Standards,1.4.8,"Establish documentation standards for calibration activities, including parameter values, methodological choices, validation results, approval records, and version control. Document how calibration history is maintained and made available for audit and governance purposes, including retention requirements.",2,
+
+Calibration Governance Framework,1.4.9,"Establish an oversight framework for calibration activities, including roles and responsibilities, approval authorities, review processes, challenge mechanisms, and escalation procedures. Document how independence is ensured in calibration validation and the governance committee structure overseeing calibration.",2,
+
+Knowledge Enhancement Methods Documentation,1.4.10,"Document any additional knowledge enhancement methods implemented beyond standard calibration, such as domain adaptation, transfer learning, ensemble techniques, or knowledge distillation. Detail validation methodology, governance controls, and performance improvement metrics.",2,
+
+Calibration Automation Assessment,1.4.11,"Assess the feasibility and appropriateness of calibration automation, including aspects that are automated versus manual. Document controls ensuring automated calibration accuracy and reliability and the human oversight framework for automated calibration processes.",2,
+
+Calibration Testing Framework,1.4.12,"Establish a comprehensive testing framework for calibration, including test cases, scenarios, edge conditions, documentation standards, and acceptance criteria. Detail how test results are incorporated into the calibration process and the governance oversight of calibration testing.",2,
+
+Calibration Versioning Controls,1.4.13,"Implement version control for calibration configurations and parameters, including tracking methodology, documentation standards, governance controls, and migration procedures. Document the assessment process for backward compatibility when calibration changes occur.",2,
+
+Numerical Methods,,,, 
+
+Numerical Methods Comprehensive Details,1.5.1,"Provide comprehensive details of all numerical methods employed, including analytical approaches, semi-analytical techniques, approximation methods, and computational algorithms. For each method, document the mathematical foundation, implementation details, appropriateness for the application, and selection rationale.",2,
+
+Method Selection Justification,1.5.2,"Justify the selection of numerical methods used in the model, including comparative analysis of alternative approaches, performance considerations, accuracy requirements, computational efficiency, and domain suitability. Document why the selected methods are optimal for this application and any identified limitations.",2,
+
+Non-analytical Methods Documentation,1.5.3,"If non-analytical methods are used (e.g., Monte Carlo Simulations, Finite Difference Method), provide detailed technical specifications including implementation approach, sampling techniques, convergence criteria, error bounds, and computational requirements. Document validation methodology and governance controls.",3,
+
+Numerical Inputs Specification,1.5.4,"Specify all numerical inputs and their recommended levels/values. For each input, document derivation methodology, acceptable ranges, sensitivity impact, and validation approach. Detail how these values were determined to be appropriate for the model's intended use and the change control process.",2,
+
+Accuracy Validation Framework,1.5.5,"Detail the methodology for validating numerical accuracy, including benchmark comparisons, error analysis, convergence testing, edge case validation, and performance under stress conditions. Document established accuracy thresholds, enforcement mechanisms, and remediation processes for accuracy issues.",2,
+
+Error Management System,1.5.6,"Describe the framework for managing numerical errors, including error detection methods, propagation analysis, remediation procedures, and impact assessment. Document error logging, analysis, and remediation methodology and intervention thresholds for numerical errors.",2,
+
+Computational Efficiency Analysis,1.5.7,"Analyze the computational efficiency of the numerical methods employed, including performance benchmarks, resource utilization, scalability analysis, and optimization techniques. Document performance monitoring methodology, maintenance procedures, and thresholds indicating unacceptable computational performance.",2,
+
+Mathematical Foundation Documentation,1.5.8,"Provide a detailed explanation of the mathematical foundation of the model, including underlying theories, principles, equations, and algorithms. Document mathematical correctness validation methodology and peer review or expert validation applied to the mathematical foundation.",3,
+
+Numerical Stability Assessment,1.5.9,"Assess the numerical stability of the model under various conditions, including input variations, parameter changes, computational environment differences, and edge cases. Document stability testing methodology and controls preventing numerical instability in production.",2,
+
+Method Documentation Standards,1.5.10,"Establish documentation standards for numerical methods, including mathematical specifications, implementation details, validation results, and limitations. Document how technical information is made accessible for review and governance and the quality control process ensuring documentation completeness.",2,
+
+Precision Requirements Documentation,1.5.11,"Specify precision requirements for numerical calculations, including necessary precision levels for accurate results, determination methodology, maintenance procedures across processing environments, and validation methodology confirming precision requirements are met.",2,
+
+Numerical Method Versioning,1.5.12,"Implement version control for numerical methods, including change tracking, testing methodology, governance controls, and performance validation across versions. Document the standards for numerical method versioning and the governance framework for version transitions.",2,
+
+Numerical Method Benchmarking,1.5.13,"Conduct benchmarking of numerical methods against industry standards or alternative implementations. Document comparative analysis validating performance and accuracy of implemented methods and the incorporation of benchmarking results into method selection and optimization.",2,
+
+Outputs Assessment,,,, 
+
+Output Comprehensive Specification,1.6.1,"Provide a comprehensive specification of all AI Technology outputs, including data types, formats, structures, volumes, frequencies, and delivery mechanisms. Document alignment with business requirements and user needs and the governance controls applicable to output specifications.",2,
+
+Output Business Context Documentation,1.6.2,"Document how model outputs are used within business processes, including decision support applications, automated processes, user interfaces, downstream systems, and external communications. Detail the criticality of outputs to business operations and contingency plans for output failures.",3,
+
+UI Content Generation Specification,1.6.3,"If applicable, detail how the model generates content for UI users, including content types, formatting requirements, personalization capabilities, delivery mechanisms, and quality control measures. Document validation methodology for UI content accuracy and appropriateness and the governance controls for UI-destined content.",2,
+
+SQL Query Generation Security Controls,1.6.4,"If the model generates SQL queries from natural language prompts, document security measures and validation procedures, including query construction methodology, security controls, performance optimization, validation procedures, and error handling. Detail prevention measures for injection vulnerabilities and unauthorized access.",3,
+
+Output Format Comprehensive Specifications,1.6.5,"Detail all output format specifications, including data structures, file formats, API responses, visualization requirements, and integration specifications. Document the customization capabilities based on user needs or system requirements and the validation methodology ensuring output format conformance.",2,
+
+Output Quality Control Framework,1.6.6,"Establish a framework for ensuring output quality, including validation procedures, accuracy checks, consistency verification, anomaly detection, and review processes. Document issue identification, remediation, and prevention methodology, quality metrics, and intervention thresholds.",3,
+
+Output Interpretability Assessment,1.6.7,"Assess the interpretability of model outputs for intended users, including clarity of presentation, contextual information, confidence metrics, underlying factors, and explanatory notes. Document user comprehension assessment methodology and the training and documentation supporting output interpretation.",2,
+
+Business Process Integration Documentation,1.6.8,"Detail how model outputs are integrated into broader business processes, including system interfaces, workflow integration, decision support frameworks, and operational procedures. Document integration validation methodology and controls preventing integration failures.",2,
+
+Output Monitoring System,1.6.9,"Establish a monitoring framework for model outputs, including performance metrics, drift detection, anomaly identification, quality thresholds, and alerting mechanisms. Document trend and pattern analysis methodology, governance oversight, and escalation procedures for identified issues.",3,
+
+Feedback Collection Mechanisms,1.6.10,"Implement mechanisms for collecting and incorporating user feedback on model outputs, including feedback channels, analysis methodology, improvement processes, and implementation timelines. Document the governance framework for feedback incorporation and the continuous improvement process based on feedback.",2,
+
+Output Validation Methodology,1.6.11,"Establish methodologies for validating outputs, including accuracy checks, consistency verification, reference comparisons, reasonableness assessments, and edge case testing. Document the validation comprehensiveness assessment and the controls ensuring validation effectiveness.",3,
+
+Output Versioning Control,1.6.12,"Implement version control for output formats and specifications, including change tracking, communication methodology, governance controls, and backward compatibility assessment. Document the testing methodology validating output version transitions.",2,
+
+Output Security Controls,1.6.13,"Implement security controls for model outputs, including confidentiality measures, integrity protections, access controls, and transmission security. Document the protection methodology throughout the output lifecycle and the compliance requirements applicable to output security.",3,
+
+Output Lineage Tracking,1.6.14,"Establish lineage tracking for outputs, documenting output origins, transformations, and destinations. Detail the audit capabilities allowing output tracing to inputs and processing steps and the maintenance methodology for lineage information for governance purposes.",2,
+
+Output Performance Metrics,1.6.15,"Define and document performance metrics for outputs, including measures assessing accuracy, timeliness, completeness, and business value. Document tracking and reporting methodology, performance thresholds, and the governance framework for output performance management.",3,
+
+2. Model Assessment,,,,"Based on the information provided in Section 1, this section determines whether the AI Technology qualifies as a Model under the governance framework. A Model is defined as a quantitative method, system or approach, that applies statistical, economic, financial, or mathematical theories, techniques, and assumptions to process input data into estimates."
+
+Model Definition Comprehensive Assessment,2.1.1,"Evaluate whether this AI Technology meets the definition of a Model as ""A quantitative method, system or approach, that applies statistical, economic, financial, or mathematical theories, techniques, and assumptions to process input data into quantitative or qualitative estimates."" Provide a detailed assessment against each component of this definition, with specific evidence from the AI Technology implementation.",3,
+
+Inherent Uncertainty Analysis,2.1.2,"Assess whether the outputs of the AI Technology are inherently uncertain (estimates, forecasts, predictions, or projections). Provide a detailed analysis of uncertainty sources and nature and their implications for model classification. Quantify the uncertainty level in model outputs using appropriate metrics.",3,
+
+Approach-specific Assumptions Identification,2.1.3,"Identify and analyze all approach-specific assumptions that would qualify this as a Model. With reference to Section 1.2, provide a detailed assessment of how these assumptions impact model behavior, limitations, and reliability. Identify the most critical assumptions for model classification and explain their significance.",3,
+
+Input Uncertainty Comprehensive Analysis,2.1.4,"Evaluate whether the approach relies on inputs that are uncertain, including inputs that are wholly/partially qualitative, opaque, or based on expert judgment. Detail how these uncertain inputs affect model classification, providing specific examples from the AI Technology implementation. Document controls addressing input uncertainty risks.",3,
+
+Multiple Model Dependency Assessment,2.1.5,"Assess whether the approach relies on outputs of other Models, especially multiple Models. Provide a detailed dependency map showing integration points, data flows, and dependency criticality. Document how these dependencies impact model classification and the overall risk profile.",3,
+
+Calibration Requirement Analysis,2.1.6,"Determine whether any of the approach's inputs and/or methodology require calibration. With reference to Section 1.4, provide a detailed analysis of calibration requirements and their significance for model classification. Document how calibration needs impact the AI Technology's risk profile.",2,
+
+Non-analytical Methodology Evaluation,2.1.7,"Evaluate whether the approach is based on a non-analytical method (e.g., Monte Carlo Simulations, Finite Difference Method). Detail the methodology and its implications for model classification. Identify specific aspects of the non-analytical approach impacting model risk and classification.",3,
+
+Exclusion Justification Documentation,2.1.8,"If the above conditions are not applicable to the quantitative approach but there are special reasons to consider it a Model, provide detailed justification. Document unique characteristics warranting Model classification despite not meeting standard criteria. Include governance or business considerations supporting this classification.",3,
+
+Model Classification Justification,2.1.9,"If at least one of the above conditions is applicable but the quantitative approach is not identified as a Model, provide detailed justification. Explain why Model classification is not appropriate despite meeting one or more criteria. Document specific factors outweighing the standard classification criteria.",3,
+
+Assessment Conclusion Documentation,2.1.10,"Provide a definitive conclusion (Model or non-Model) based on the comprehensive assessment above. This determination establishes the governance requirements applicable to this AI Technology. Document the conclusion with supporting rationale. If classified as a Model, specify the applicable governance tier.",3,
+
+Model Classification Review Process,2.1.11,"Establish a process for reviewing the Model classification determination over time. Document reassessment triggers, classification decision documentation, stakeholder communication procedures, and governance oversight for classification decisions.",2,
+
+3. Model Complexity Assessment,,,,"Model Complexity reflects the inherent risks within each component of the AI Technology, including inputs/data, assumptions, methodology, implementation and outputs. Complexity is assessed using risk factors and assigned based on the sum of risk factor scores (out of 19 total possible points)."
+
+Industry Acceptance Comprehensive Assessment,3.1.1,"Evaluate whether this is a non-standard Model based on a special set of Model assumptions and/or a large set of non-standard inputs. Per guidance, a non-standard Model is inherently more risky and should be rated higher. Provide detailed analysis of all non-standard elements and their risk implications. Document how these non-standard elements impact model governance and controls.",3,
+
+Assumption Suitability Analysis,3.1.2,"Assess whether Model assumptions are fully suitable to Model intended use. A Model is inherently more risky if Model assumptions are NOT fully suitable to intended use. Provide a comprehensive assessment of assumption adequacy relative to business requirements, noting any gaps or misalignments. Document controls mitigating risks from assumption limitations.",3,
+
+Input Sensitivity Comprehensive Analysis,3.1.3,"Conduct a detailed sensitivity analysis of the Model to its assumptions and Expert Judgment inputs. A Model is riskier if its outputs are highly sensitive to one or more of its major assumptions or expert judgment inputs. Quantify sensitivity measures for key inputs and explain their implications for model risk. Document thresholds determining high, medium, or low sensitivity.",3,
+
+Hyperparameter Complexity Assessment,3.1.4,"Evaluate whether the algorithm contains a high number of hyperparameters (e.g., learning rate, number of features, weighting). A Model is inherently more risky if the algorithm contains a high number of hyperparameters. Catalog all hyperparameters and their optimization methodology. Document how hyperparameter changes are controlled and validated.",3,
+
+Data Complexity Analysis,3.1.5,"Assess Model Risk associated with complex data structures, unstructured data, or low-quality inputs. Model Risk increases with complex data structures, unstructured data, or low-quality inputs. Provide a detailed analysis of data complexity factors and their impact on model risk. Document controls mitigating risks from data complexity.",3,
+
+Feature Volume Risk Assessment,3.1.6,"Evaluate whether the AI Model uses a large number of features/variables. Model Risk increases when a large number of features/variables increases Model Risk. Quantify feature complexity and its impact on model risk. Document controls addressing risks from high feature volume, and detail the feature selection justification.",3,
+
+Performance Limitation Analysis,3.1.7,"Assess Model Risk arising from Model performance limitations under current market or extreme conditions. Provide detailed analysis of performance under various scenarios and stress conditions. Document performance thresholds indicating unacceptable model behavior and contingency plans addressing performance failures.",3,
+
+Infrastructure Automation Assessment,3.1.8,"Evaluate the level of Model infrastructure automation, including straight-through processing capabilities. An automated Model infrastructure reduces the risk of operational error. Detail automation level, control points, and risk reduction measures. Document remaining manual intervention points and their control framework.",2,
+
+Model Dependency Risk Analysis,3.1.9,"Assess Model Risk associated with complex or large number of feeder Models. Model Risk increases when complex or large number of feeder Models are used. Provide a detailed dependency map and risk analysis. Document controls mitigating risks from model dependencies and contingency plans addressing dependency failures.",3,
+
+Complexity Score Calculation Documentation,3.1.10,"Calculate the total complexity score based on the assessments above. With reference to the scoring matrix (Low <=5, Medium 6-11, High >=12), provide detailed scoring calculation and justification for each factor. The maximum score is 19 points. Document how the final score reflects the overall complexity risk profile.",3,
+
+Complexity Classification Determination,3.1.11,"Based on the calculated score, assign the appropriate Complexity Classification (Low/Medium/High). This classification has direct implications for the Model Tier assignment and governance requirements. Document the assigned classification with supporting evidence. Detail how this classification aligns with qualitative assessment of model complexity.",3,
+
+Complexity Governance Controls,3.1.12,"Establish governance controls commensurate with the assessed complexity level. Detail the specific governance mechanisms, documentation requirements, review processes, and testing protocols aligned with the complexity classification. Document how these controls mitigate the identified complexity risks.",2,
+
+Complexity Reassessment Framework,3.1.13,"Establish a framework for reassessing complexity over time. Document reassessment triggers, review frequency, governance oversight, and change management procedures for complexity classification modifications.",2,
+
+4. Model Materiality Assessment,,,,"Model Materiality is determined by Model Use and the level of human review/oversight into the AI technology development, training and output (Human in the Loop - HITL)"
+
+External-Facing Usage Evaluation,4.1.1,"Provide a comprehensive assessment of whether model outputs are used for external-facing activities (e.g., client, regulator). In accordance with the Model Use Rating table, external-facing use represents High materiality. Detail all external usage scenarios, their frequency, business significance, and associated regulatory considerations.",3,
+
+Internal Impact Evaluation,4.1.2,"Evaluate whether model outputs are used for internal facing activities with direct impact on external output (e.g., risk management). Per the Model Use Rating table, this represents Medium materiality. Document the impact flow from internal use to external outcomes, providing specific examples of how internal usage influences external-facing decisions or outputs.",2,
+
+Operational Efficiency Usage Assessment,4.1.3,"Assess whether model outputs are used for internal facing activities aimed at increasing operational efficiencies (e.g., data analytics, chatbot, translation). Per the Model Use Rating table, this represents Low materiality. Quantify the efficiency benefits, usage patterns, and business value derived from these operational applications.",1,
+
+Human Oversight Implementation Assessment,4.1.4,"Document the level of Human in the Loop implementation based on the HITL assessment matrix. This may be classified as Minimal (basic prompt engineering, no systematic review, no feedback loop), Standard (structured management, regular sampling, basic feedback), or Enhanced (comprehensive monitoring, active optimization, documented process). Provide detailed evidence supporting the assigned level of human oversight.",3,
+
+Prompt Engineering Methodology Evaluation,4.1.5,"Detail the sophistication of prompt engineering implemented for this AI solution. This may range from basic prompt engineering only (Minimal), to structured prompt management with version control (Standard), to active prompt optimization based on user feedback (Enhanced). Document the prompt management methodology, governance controls, and version management approach.",2,
+
+Output Review Process Documentation,4.1.6,"Describe the systematic review process established for model outputs. This may range from no systematic review (Minimal), to regular sampling and review (Standard), to comprehensive output monitoring with quality control (Enhanced). Document review procedures, sampling methodology, review frequency, and remediation workflows for identified issues.",2,
+
+Feedback Collection Framework Assessment,4.1.7,"Evaluate the feedback collection process implemented for this AI solution. This may range from no feedback loop (Minimal), to basic feedback collection from end users (Standard), to systematic collection and incorporation of SME feedback (Enhanced). Document the feedback mechanisms, analysis methodology, implementation procedures, and governance oversight of the feedback process.",2,
+
+Retrieval Quality Evaluation Process,4.1.8,"Assess the methodology for evaluating retrieval accuracy and quality. This may range from no evaluation (Minimal), to periodic review of retrieval quality (Standard), to regular evaluation of retrieval accuracy and relevance (Enhanced). Document the evaluation methodology, metrics used, improvement processes, and governance oversight of retrieval quality management.",2,
+
+Edge Case Management Framework,4.1.9,"Detail the process established for handling edge cases in model outputs. This may range from no process (Minimal), to periodic review (Standard), to documented review process for edge cases (Enhanced). Document the identification, documentation, resolution procedures, and governance oversight for edge case management.",2,
+
+Knowledge Base Quality Management,4.1.10,"Evaluate the management approach for knowledge base quality and coverage. This may range from no assessment (Minimal), to periodic review (Standard), to regular assessment of knowledge base quality and coverage (Enhanced). Document the assessment methodology, quality metrics, improvement processes, and governance oversight of knowledge base management.",2,
+
+Human Oversight Documentation,4.1.11,"Provide comprehensive documentation of all human oversight mechanisms implemented across the AI solution lifecycle. Detail the specific human touchpoints in development, testing, deployment, operation, and monitoring. Identify key roles, responsibilities, required expertise, and governance structures supporting human oversight.",2,
+
+Override Capability Assessment,4.1.12,"Evaluate the capabilities and governance for human override of AI-generated outputs. Document the criteria for override decisions, authorization requirements, execution procedures, documentation standards, and governance controls. Assess the effectiveness of override mechanisms through historical analysis of override instances.",2,
+
+Output Auditing Framework,4.1.13,"Detail the framework established for auditing model outputs. Document audit scope, methodology, frequency, sampling approach, documentation standards, and governance oversight. Assess the effectiveness of the audit framework in identifying output issues and driving quality improvements.",2,
+
+Model Materiality Matrix Application,4.1.14,"Apply the Model Materiality matrix to determine the appropriate materiality level based on the combination of HITL level (Minimal/Standard/Enhanced) and Model Use (High/Medium/Low). The matrix combines these factors to produce a final Materiality Rating (High/Medium/Low/Very Low). Document the specific matrix intersections supporting the assigned rating.",3,
+
+Materiality Justification Analysis,4.1.15,"Provide a comprehensive justification for the assigned Materiality Rating, referencing specific evidence from the HITL and Model Use assessments. This rating directly impacts the Model Tier assignment and governance requirements. Document how the materiality rating aligns with the AI solution's business criticality and risk profile.",3,
+
+5. Model Tier Assessment,,,,"Model Tier is determined by combining Model Complexity and Model Materiality according to the specified tiering matrix. The Model Tier determines the level of governance and controls required."
+
+Tier Matrix Application,5.1.1,"Apply the Model Tier matrix to determine the appropriate Model Tier based on the Model Complexity (Section 3) and Model Materiality (Section 4) assessments. The matrix combines Complexity (High/Medium/Low) and Materiality (High/Medium/Low/Very Low) to assign a Tier from 1 to 4, with Tier 1 representing the highest level of governance requirements and Tier 4 the lowest. Document the specific matrix intersection supporting the assigned tier.",3,
+
+Tier Justification Documentation,5.1.2,"Provide a comprehensive justification for the proposed Model Tier assignment, referencing specific factors from the Complexity and Materiality assessments that influenced the determination. Document how the assigned Tier reflects the overall risk profile of the model and aligns with organizational governance standards. Include any supplemental considerations that influenced the tier determination.",3,
+
+Governance Requirement Mapping,5.1.3,"Detail the specific governance implications of the assigned Model Tier. Document the required: documentation standards, review frequency, testing protocols, validation requirements, approval authorities, monitoring expectations, and reporting obligations. Ensure alignment with organizational governance standards for the assigned Tier and develop an implementation plan for meeting these requirements.",2,
+
+Alternative Tier Consideration Documentation,5.1.4,"If alternative Tier classifications were considered, document the comparative analysis and rationale for the final determination. Detail the risk factors evaluated under different Tier scenarios and provide the business justification for the selected classification. Include input from relevant stakeholders in the justification process.",2,
+
+Business Impact Analysis,5.1.5,"Assess the business impact of the assigned Model Tier by documenting: resource requirements, timeline implications, operational constraints, and compliance obligations. Develop an implementation plan addressing these requirements and identifying responsible parties, timelines, and success metrics for Tier compliance.",2,
+
+Tier Compliance Gap Analysis,5.1.6,"Conduct a gap analysis between current governance practices and the requirements of the assigned Model Tier. Document all identified gaps, mitigation strategies, implementation timelines, and responsible parties. Develop a monitoring framework to track progress toward full Tier compliance.",3,
+
+Tier Reassessment Framework,5.1.7,"Establish a framework for reassessing the Model Tier assignment over time. Document the triggers that would prompt a reassessment, the required approval process for tier changes, and the governance oversight of the Tier classification. Include the communication plan for notifying stakeholders of tier reassessments or changes.",2,
+
+6. Confirmation,,,,"A formal confirmation from the Model Identification Owner(s) or Owner of the Model must be provided to establish agreement with the AI Technology assessment including Model Tier assignment."
+
+Owner Confirmation Documentation,6.1.1,"Provide formal confirmation that the Model Identification Owner(s) or Owner of the Model has reviewed and agreed with the comprehensive AI Technology assessment, including the Model Tier assignment. This confirmation, submitted via attached email or equivalent documentation, establishes accountability for the assessment. Document the date of confirmation and the specific aspects reviewed and approved.",3,
+
+Assessment Completeness Verification,6.1.2,"Verify and document that all sections of the assessment template have been completed with appropriate detail and supporting evidence. For any sections deemed not applicable, provide supporting rationale explaining why the section does not apply. Document the verification process, responsible parties, and completeness metrics.",2,
+
+Review and Challenge Process Documentation,6.1.3,"Detail the review and challenge process applied to this assessment. Document reviewer identities, areas of focus, challenge outcomes, and resolution of any discrepancies. This documentation ensures the assessment has been subjected to appropriate scrutiny and validates the thoroughness of the evaluation process.",2,
+
+Final Determination Record,6.1.4,"Document the final determination regarding Model classification, Complexity, Materiality, and Tier assignment. This serves as the authoritative record for governance purposes and establishes the baseline for ongoing model governance. Include effective dates and review timelines for each determination.",3,
+
+Approval Documentation Completeness,6.1.5,"Confirm and document that all required approvals have been obtained according to governance requirements. Document approver identities, approval dates, and any conditions attached to the approvals. This documentation establishes the official status of the assessment and authorizes implementation of the associated governance framework.",2,
+
+Implementation Plan Development,6.1.6,"Develop a comprehensive implementation plan for meeting the governance requirements associated with the Model determination and Tier assignment. Document action items, responsible parties, timelines, success metrics, and monitoring mechanisms. Include communication protocols for keeping stakeholders informed of implementation progress.",2,
+
+Ongoing Governance Framework,6.1.7,"Establish the ongoing governance framework for the Model based on its classification and Tier assignment. Document governance meeting frequency, standing agenda items, participant roles, reporting requirements, and issue escalation procedures. Include communication protocols for governance activities and decision documentation standards.",3,
+
+7. Additional Risk Assessments,,,, 
+
+Bias Risk Comprehensive Assessment,7.1.1,"Conduct and document a comprehensive assessment of potential bias risks in the AI solution. Evaluate whether the AI solution requires training with information that might cause bias or discrimination (gender, race, ethnicity, age, disability, geographic information, etc.). Detail potential bias sources, risk levels, business implications, and mitigation strategies implemented to address identified risks.",3,
+
+Bias Control Framework Evaluation,7.1.2,"Document all bias and fairness risk controls/metrics implemented in the model. Detail how these controls have been validated through independent testing. Include control mechanisms, testing methodology, effectiveness measures, and ongoing monitoring processes. Assess the adequacy of controls relative to identified bias risks and document any enhancement recommendations.",2,
+
+External Bias Audit Documentation,7.1.3,"If applicable, document any external independent bias audits conducted for this AI solution. Include audit scope, methodology, key findings, remediation actions, and validation of remediation effectiveness. If no external audit has been performed, assess the need for such an audit based on the model's risk profile and usage context.",2,
+
+Bias Monitoring Framework,7.1.4,"Detail the process established for ongoing evaluation of bias & fairness risk. Document the evaluation methodology, metrics tracked, assessment frequency, reporting mechanisms, and governance oversight. Include response protocols for addressing newly identified bias issues and the process for incorporating evolving industry standards for bias detection and mitigation.",2,
+
+Transparency and Explainability Assessment,7.2.1,"Document how the AI solution is evaluated for transparency and explainability. Detail whether this evaluation is conducted internally, by an independent party, or by the service provider. Include evaluation methodology, standards applied, key findings, and enhancement plans. Assess the adequacy of transparency relative to the model's use case and risk profile.",2,
+
+Explainability Framework Documentation,7.2.2,"Detail the explainability metrics and processes established to explain how the AI solution works when requested. Document the technical approach to explainability, user-facing explanation methodologies, and validation procedures that ensure explanations are accurate and comprehensible to the intended audience. Include governance controls specific to explainability management.",2,
+
+Documentation Comprehensiveness Assessment,7.2.3,"Evaluate the completeness of internal documentation owned and managed by the AI solution owner. Verify and document that the documentation includes: ownership information, development process, data sources, intended use, incident management procedures, and other required elements. Assess documentation accessibility, update processes, and governance controls.",2,
+
+Accuracy Evaluation Methodology,7.3.1,"Document the methodology used to evaluate the AI solution for output accuracy against intended use. Detail whether this evaluation is conducted internally, by an independent party, or by the service provider. Include evaluation scope, methodology, performance metrics, acceptance criteria, and governance oversight of the accuracy assessment process.",2,
+
+Error Management Framework Documentation,7.3.2,"Detail all validations built to identify and correct errors in outputs and detect unexpected model changes. Document monitoring systems, correction workflows, effectiveness measures, and governance oversight. Include historical analysis of error detection performance and effectiveness of remediation procedures.",2,
+
+Hallucination Risk Management Assessment,7.3.3,"Document the approach for evaluating and mitigating hallucination risk in the AI solution. Detail detection methods, controls, mitigation strategies, and effectiveness measures. Include governance oversight of hallucination management and escalation procedures for significant hallucination incidents. Assess the adequacy of controls relative to the model's usage context and potential impact of hallucinations.",3,
+
+Stress Testing Documentation,7.4.1,"Document all stress test scenarios conducted to verify AI solution performance under sudden changes in business conditions or inputs. Include test design, execution methodology, results analysis, and remediation actions for identified vulnerabilities. Assess the comprehensiveness of stress testing relative to the model's risk profile and usage context.",3,
+
+Stability Analysis Framework,7.4.2,"Detail the scenario, sensitivity, or benchmarking analysis performed to assess stability and robustness. Document testing methodology, scenarios evaluated, performance metrics, acceptance criteria, and remediation actions for identified issues. Include the governance framework for stability assessment and the process for incorporating findings into model enhancements.",2,
+
+Backtesting Methodology Documentation,7.4.3,"Document the AI solution backtesting methodology, including performance metrics, execution frequency, result analysis, and incorporation of findings into model improvements. Assess the adequacy of backtesting relative to the model's complexity and materiality. Include governance oversight of the backtesting process and documentation standards for backtesting results.",2,
+
+Cyber Security Control Framework,7.5.1,"Document all security measures implemented to protect against adversarial attacks or prompt injection vulnerabilities. Detail control mechanisms, testing procedures, effectiveness measures, and alignment with organizational security standards. Include security incident history, remediation actions, and enhancements implemented based on security events or testing.",3,
+
+Cloud Security Assessment Documentation,7.5.2,"If cloud-deployed, document the comprehensive cloud security assessment conducted for this AI solution. Include assessment scope, methodology, key findings, remediation actions, and validation of control effectiveness. Detail ongoing cloud security monitoring, compliance with cloud security standards, and governance oversight of cloud security management.",2,
+
+Access Control Framework Documentation,7.5.3,"Detail all controls implemented to prevent unauthorized access or modification of the model or its parameters. Document authentication mechanisms, authorization frameworks, privilege management, access reviews, and audit procedures. Include security incident history related to access controls and remediation actions implemented in response to identified vulnerabilities.",2,
+
+Incident Response Plan Documentation,7.5.4,"Document the incident response plan established for AI-related security incidents. Detail detection mechanisms, classification criteria, escalation procedures, response protocols, and recovery plans. Include tabletop exercise results, lessons learned from actual or simulated incidents, and plan update processes based on evolving threats or organizational changes.",2,
+
+8. Regulatory and Compliance Assessment,,,,
+
+Regulatory Compliance Documentation,8.1.1,"Document the comprehensive assessment of applicable laws and regulations relevant to this AI solution. Detail compliance evaluation methodology, identified requirements, implementation measures, and validation procedures. Include the governance framework for ongoing compliance management and the process for monitoring and adapting to regulatory changes.",3,
+
+Ethics Framework Assessment,8.1.2,"Detail the ethical framework applied to the AI solution development and operation. Document ethical principles, implementation mechanisms, assessment methodology, and governance oversight. Include ethical risk assessment, mitigation strategies, and the process for addressing ethical dilemmas that may arise during model operation.",2,
+
+Privacy Impact Assessment,8.1.3,"Document the privacy impact assessment conducted for this AI solution. Detail data privacy requirements, implementation measures, validation procedures, and ongoing monitoring. Include data protection mechanisms, consent management, data minimization approaches, and alignment with organizational privacy standards and applicable regulations.",3,
+
+Model Risk Management Compliance,8.1.4,"Evaluate compliance with organizational Model Risk Management standards and procedures. Document alignment with governance requirements, identified gaps, remediation plans, and validation of compliance. Include the governance framework for ongoing model risk management and the process for adapting to changes in organizational standards.",2,
+
+Third-Party Risk Assessment,8.1.5,"If the AI solution incorporates third-party components or services, document the comprehensive risk assessment of these dependencies. Detail vendor assessment methodology, identified risks, mitigation measures, contractual protections, and ongoing monitoring. Include contingency plans for third-party service disruptions or quality issues.",3,
+
+Documentation Standards Compliance,8.1.6,"Assess compliance with organizational documentation standards for AI solutions. Document alignment with requirements, identified gaps, remediation plans, and validation of compliance. Include the governance framework for documentation management and the process for adapting to changes in documentation standards.",2,
+
+9. Operational Readiness Assessment,,,,
+
+Implementation Planning Documentation,9.1.1,"Detail the comprehensive implementation plan for the AI solution. Document key milestones, resource requirements, dependencies, risk management, and governance oversight. Include the change management approach, stakeholder communication plan, and success criteria for implementation.",2,
+
+Training Program Assessment,9.1.2,"Document the training program developed for system operators, business users, and governance stakeholders. Detail training objectives, curriculum design, delivery methodology, competency assessment, and refresher training requirements. Include evaluation of training effectiveness and the process for updating training based on operational feedback.",2,
+
+Operational Support Framework,9.1.3,"Detail the operational support framework established for the AI solution. Document support levels, response times, escalation procedures, knowledge management, and continuous improvement processes. Include service level agreements, performance metrics, and governance oversight of operational support.",2,
+
+Business Continuity Planning,9.1.4,"Document the business continuity and disaster recovery plans developed for the AI solution. Detail risk assessment, recovery strategies, testing methodology, documentation standards, and governance oversight. Include test results, lessons learned, and plan update processes based on evolving business requirements or technological changes.",3,
+
+Performance Monitoring Framework,9.1.5,"Detail the comprehensive performance monitoring framework established for the AI solution. Document monitored metrics, thresholds, alerting mechanisms, response procedures, and governance oversight. Include historical performance analysis, trend identification, and the process for incorporating monitoring insights into model enhancements.",2,
+
+Change Management Process Documentation,9.1.6,"Document the change management process established for the AI solution. Detail change categories, impact assessment methodology, approval requirements, testing standards, implementation procedures, and rollback capabilities. Include the governance framework for change management and documentation standards for change history.",2,
+
+10. Lifecycle Management Assessment,,,,
+
+Development Lifecycle Documentation,10.1.1,"Document the comprehensive development lifecycle for the AI solution. Detail requirements gathering, design methodology, development standards, testing approach, deployment procedures, and performance validation. Include governance gates, documentation requirements, and quality assurance measures at each lifecycle stage.",2,
+
+Maintenance Strategy Assessment,10.1.2,"Detail the maintenance strategy established for the AI solution. Document scheduled maintenance activities, performance optimization approaches, technical debt management, and governance oversight. Include maintenance history, effectiveness metrics, and the process for evolving the maintenance strategy based on operational experience.",2,
+
+Retirement Planning Documentation,10.1.3,"Document the retirement planning considerations for the AI solution. Detail trigger criteria, impact assessment methodology, data archiving requirements, stakeholder communication plan, and governance oversight. Include the transition strategy for successor systems and compliance considerations for data retention or destruction.",2,
+
+Version Control Framework,10.1.4,"Detail the version control framework established for the AI solution. Document versioning methodology, change tracking, deployment validation, rollback capabilities, and governance oversight. Include historical version analysis, trend identification, and the process for managing concurrent development streams.",2,
+
+Audit History Management,10.1.5,"Document the audit history management approach for the AI solution. Detail audit scope, frequency, methodology, documentation standards, and remediation tracking. Include audit history analysis, trend identification, and the process for incorporating audit findings into model governance and enhancement.",3,

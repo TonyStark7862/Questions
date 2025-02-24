@@ -1,0 +1,247 @@
+Risk category and sub-category,Ref.,Question,Risk Scores,Justification
+
+1. Description of the AI Technology,,,,"Please provide comprehensive explanations with supporting evidence, technical documentation, and relevant metrics where applicable."
+
+AI Technology Purpose,1.1.1,"Provide a detailed description of the purpose of the AI Technology/Model, including its primary business objective, strategic alignment with organizational goals, specific business problems it aims to solve, and quantifiable expected benefits. Articulate how this aligns with the organization's technology strategy.",1,
+
+Development Team,1.1.2,"Specify the desk/team that developed the AI technology, including: organizational structure, reporting lines, team composition (roles and responsibilities), relevant expertise and credentials in AI/ML implementations, and previous experience with similar technologies. Detail any external vendors or partners involved in development.",1,
+
+Target Users,1.1.3,"Comprehensively identify who the target users are and the specific regions where the AI Technology will be deployed. Detail regional considerations including: regulatory environments, language requirements, cultural factors, data privacy implications, and anticipated adoption challenges for each deployment region.",1,
+
+Operational Framework,1.1.4,"Explain how the AI Technology will be operationalized within the existing business processes. Include integration points, dependencies on other systems, change management requirements, training needs for users, and performance expectations under normal and peak operational conditions.",1,
+
+Business Context,1.1.5,"Describe the broader business context in which this AI Technology will operate, including market conditions, competitive landscape, regulatory environment, and organizational readiness. How does this solution address specific business challenges or opportunities?",1,
+
+Application Scope,1.1.6,"Provide a well-articulated application scope detailing exactly what the AI Technology will and will not do. Include functional boundaries, use case specifications, explicit exclusions, integration requirements, and scaling considerations. The scope should precisely define the operational parameters of the model.",1,
+
+Technical Architecture,1.1.7,"Detail the technical implementation architecture of the AI model, including: framework selection (e.g., transformer-based encoding), infrastructure requirements, deployment methodology, component interaction, data flow, API specifications, security measures, and scalability considerations. Include architectural diagrams where applicable.",1,
+
+Development Methodology,1.1.8,"Explain the development methodology utilized for this AI Technology, including: development lifecycle approach, validation strategy, quality assurance framework, testing protocols, code review procedures, and release management process. How were development standards enforced?",1,
+
+Assumptions and Limitations,,,, 
+
+Key Assumptions,1.2.1,"Provide a comprehensive table of all key assumptions made during model development with their corresponding implications and justifications. Include assumptions related to: data representativeness, problem formulation, algorithm selection, hyperparameter choice, business environment stability, and regulatory interpretation. Explain how these assumptions were validated.",2,
+
+Data Source Assumptions,1.2.2,"Analyze in detail any single-source or limited-source data dependencies. For instance, if the AI Model uses a single source of news/data (e.g., Bbg terminal), provide a thorough assessment of implications for potentially missing risk events or information. Include quantification of potential blind spots and their business impact.",2,
+
+Statistical Assumptions,1.2.3,"Detail all statistical assumptions underlying the model, including: distribution assumptions, independence assumptions, stationarity assumptions, and any other mathematical premises upon which the model is built. How have these assumptions been tested and validated? What contingencies exist if these assumptions prove invalid?",2,
+
+Domain Assumptions,1.2.4,"Articulate all domain-specific assumptions made regarding business rules, market behavior, user interaction patterns, or expert knowledge. How were these domain assumptions sourced, validated, and incorporated into the model? Include input from subject matter experts where applicable.",2,
+
+Regional Limitations,1.2.5,"Provide a detailed assessment of known geographical or regional limitations of the model including: language constraints, market-specific data limitations, regulatory compliance gaps, and cultural context limitations. Quantify the potential impact of these limitations on model performance and business outcomes.",2,
+
+Temporal Limitations,1.2.6,"Analyze any temporal limitations of the model, including: historical data scope limitations, seasonality effects, trending dependencies, time-sensitivity of data, and projection limitations. How are these temporal factors addressed in the model design and output interpretation?",2,
+
+Output Bias Assessment,1.2.7,"Conduct a comprehensive bias analysis of potential model outputs. For example, assess if outputs could be biased towards larger organizations, US-based entities, or English-language content. Categorize each identified bias by severity (High/Medium/Low), potential business impact, and reputational risk.",3,
+
+Sensitivity Analysis,1.2.8,"Provide a detailed sensitivity analysis of model performance relative to key assumptions. Which assumptions, if violated, would most significantly impact model performance? Quantify the expected performance degradation and business impact under various assumption violation scenarios.",2,
+
+Mitigation Controls,1.2.9,"Detail all implemented controls, guardrails, and mitigation strategies addressing identified limitations. Include: monitoring mechanisms, override protocols, validation thresholds, alerting systems, review processes, and contingency plans. Explain the testing and validation of these controls under various scenarios.",2,
+
+Limitation Documentation,1.2.10,"Describe how model limitations are documented, communicated to users, and incorporated into business processes. How are limitations reflected in model governance, user training, and operational procedures? What disclosure mechanisms ensure transparency regarding model limitations?",2,
+
+Inputs Assessment,,,, 
+
+Input Parameters Inventory,1.3.1,"Provide a comprehensive inventory of all AI Technology inputs, including: data sources, structured fields, unstructured data, reference data, market data, configuration parameters, and triggering conditions. For each input, detail the source, format, frequency, quality controls, and criticality to model performance.",2,
+
+Pre-processing Requirements,1.3.2,"Detail all data pre-processing requirements including: cleansing methodologies, normalization techniques, tokenization processes, named entity recognition, feature engineering steps, data transformation pipelines, and quality assurance checks. How are these pre-processing steps validated and monitored?",2,
+
+Opaque Parameters,1.3.3,"Identify all opaque parameters or expert judgments incorporated in the model. For each, provide: derivation methodology, validation approach, governance controls, review frequency, authorized modifiers, documentation requirements, and impact on model outcomes. How are changes to these parameters controlled?",3,
+
+Parameter Update Governance,1.3.4,"Describe the governance framework for parameter updates, including: authorization protocols, testing requirements, validation methodologies, documentation standards, version control procedures, and audit trails. How frequently are parameters updated, and what triggers these updates?",2,
+
+Update Frequency Justification,1.3.5,"Provide a detailed justification for the update frequency of model parameters and expert judgments. Include analysis of: business cycle considerations, market volatility factors, data refresh rates, model drift detection, and alignment with business decision timeframes. Is the established frequency sufficient for the intended use case?",2,
+
+RAG Implementation,1.3.6,"If Retrieval-Augmented Generation (RAG) is used for optimizing model output, provide comprehensive technical details including: retrieval methodology, knowledge source selection, integration approach, relevance ranking, context incorporation, query formulation, and performance metrics. How is RAG effectiveness measured and optimized?",2,
+
+Internal Data Sources,1.3.7,"Catalog all XYZ internal data sources (Sharepoint, Jira, Gitlab, Confluence, etc.) utilized by the model. For each, detail: access controls, security measures, data lineage, quality assurance, refresh mechanisms, backup procedures, and compliance status. How is data consistency and accuracy ensured?",2,
+
+Feeder Models Integration,1.3.8,"Identify all feeder AI Models or Agents (internal or third-party) whose outputs are used by this AI Model. For each dependency, provide: integration methodology, data exchange format, quality controls, dependency management, failure handling, version compatibility, and performance monitoring.",3,
+
+Data Quality Framework,1.3.9,"Detail the framework for ensuring input data quality, including: quality metrics, monitoring frequency, anomaly detection, remediation procedures, quality thresholds, validation checks, and escalation protocols. How are data quality issues identified, addressed, and prevented?",2,
+
+Input Validation Methodology,1.3.10,"Explain the methodologies employed for validating inputs, including: range checks, consistency validations, reference data comparison, anomaly detection, trend analysis, and cross-validation. How are validation failures handled and remediated?",2,
+
+Calibration Assessment,,,, 
+
+Calibration Methodology,1.4.1,"Provide a detailed explanation of the calibration methodology for AI Technology parameters and/or methodology. Include: calibration objectives, parameter selection criteria, optimization techniques, validation approaches, performance metrics, and recalibration triggers. How is the calibration process documented and governed?",2,
+
+Implementation Specifications,1.4.2,"Detail the technical implementation of the calibration process, including: algorithmic approach, optimization techniques, convergence criteria, processing requirements, automation level, and execution frequency. Provide supporting rationale for the selected implementation approach.",2,
+
+Calibration Frequency,1.4.3,"Specify and justify the frequency of model calibration activities. Include analysis of: sensitivity to market conditions, data refresh considerations, model drift patterns, business cycle alignment, and operational constraints. How was this frequency determined to be appropriate?",2,
+
+External Knowledge Integration,1.4.4,"Describe in detail how external knowledge is integrated into the model (e.g., through RAG implementation, fine-tuning, knowledge distillation, or other enhancement methods). Specify: knowledge sources, selection criteria, integration methodology, quality assurance, and maintenance procedures.",2,
+
+Fine-tuning Process,1.4.5,"If applicable, provide comprehensive details of the model fine-tuning process, including: dataset selection, data preparation, training methodology, hyperparameter optimization, convergence criteria, validation approach, and performance evaluation. How are overfitting and data contamination prevented?",2,
+
+Calibration Validation,1.4.6,"Explain the validation process for calibration effectiveness, including: validation dataset selection, performance metrics, acceptance criteria, comparative analysis, and statistical testing. How are validation results documented and incorporated into governance?",2,
+
+Parameter Sensitivity,1.4.7,"Provide a sensitivity analysis of model performance to calibration parameters. Identify which parameters have the most significant impact on model performance and business outcomes. How is this sensitivity information used in calibration governance?",3,
+
+Calibration Documentation,1.4.8,"Detail the documentation standards for calibration activities, including: parameter values, methodological choices, validation results, approval records, and version control. How is calibration history maintained and made available for audit and governance purposes?",2,
+
+Calibration Oversight,1.4.9,"Describe the oversight framework for calibration activities, including: roles and responsibilities, approval authorities, review processes, challenge mechanisms, and escalation procedures. How is independence ensured in calibration validation?",2,
+
+Knowledge Enhancement Methods,1.4.10,"Detail any additional knowledge enhancement methods implemented beyond standard calibration, such as: domain adaptation, transfer learning, ensemble techniques, or knowledge distillation. How are these enhancements validated and governed?",2,
+
+Numerical Methods,,,, 
+
+Method Details,1.5.1,"Provide comprehensive details of all numerical methods employed, including: analytical approaches, semi-analytical techniques, approximation methods, and computational algorithms. For each method, explain the mathematical foundation, implementation details, and appropriateness for the intended application.",2,
+
+Selection Justification,1.5.2,"Justify the selection of the numerical methods used in the model. Include comparative analysis of alternative approaches, performance considerations, accuracy requirements, computational efficiency, and domain suitability. Why are the selected methods optimal for this application?",2,
+
+Non-analytical Methods,1.5.3,"If non-analytical methods are used (e.g., Monte Carlo Simulations, Finite Difference Method), provide detailed technical specifications including: implementation approach, sampling techniques, convergence criteria, error bounds, and computational requirements. How are these methods validated?",3,
+
+Numerical Inputs,1.5.4,"Specify all numerical inputs and their recommended levels/values. For each input, provide: derivation methodology, acceptable ranges, sensitivity impact, and validation approach. How were these values determined to be appropriate for the model's intended use?",2,
+
+Accuracy Validation,1.5.5,"Detail the methodology for validating numerical accuracy, including: benchmark comparisons, error analysis, convergence testing, edge case validation, and performance under stress conditions. What are the established accuracy thresholds and how are they enforced?",2,
+
+Error Management,1.5.6,"Describe the framework for managing numerical errors, including: error detection methods, propagation analysis, remediation procedures, and impact assessment. How are numerical errors logged, analyzed, and addressed?",2,
+
+Computational Efficiency,1.5.7,"Analyze the computational efficiency of the numerical methods employed, including: performance benchmarks, resource utilization, scalability analysis, and optimization techniques. How is computational performance monitored and maintained?",2,
+
+Mathematical Foundation,1.5.8,"Provide a detailed explanation of the mathematical foundation of the model, including: underlying theories, principles, equations, and algorithms. How is mathematical correctness ensured and validated?",3,
+
+Numerical Stability,1.5.9,"Assess the numerical stability of the model under various conditions, including: input variations, parameter changes, computational environment differences, and edge cases. How is stability tested and maintained?",2,
+
+Method Documentation,1.5.10,"Detail the documentation standards for numerical methods, including: mathematical specifications, implementation details, validation results, and limitations. How is this technical information made accessible for review and governance?",2,
+
+Outputs Assessment,,,, 
+
+Output Specification,1.6.1,"Provide a comprehensive specification of all AI Technology outputs, including: data types, formats, structures, volumes, frequencies, and delivery mechanisms. How do these outputs align with business requirements and user needs?",2,
+
+Output Usage Context,1.6.2,"Detail how model outputs are used within business processes, including: decision support applications, automated processes, user interfaces, downstream systems, and external communications. How critical are these outputs to business operations and decision-making?",3,
+
+UI Content Generation,1.6.3,"If applicable, describe in detail how the model generates content for UI users. Include: content types, formatting requirements, personalization capabilities, delivery mechanisms, and quality control measures. How is UI content validated for accuracy and appropriateness?",2,
+
+SQL Query Generation,1.6.4,"If the model generates SQL queries from natural language prompts, provide detailed information on: query construction methodology, security measures, performance optimization, validation procedures, and error handling. How are injection vulnerabilities and unauthorized access prevented?",3,
+
+Output Format Specifications,1.6.5,"Detail all output format specifications, including: data structures, file formats, API responses, visualization requirements, and integration specifications. Are these formats customizable based on user needs or system requirements?",2,
+
+Output Quality Control,1.6.6,"Describe the framework for ensuring output quality, including: validation procedures, accuracy checks, consistency verification, anomaly detection, and review processes. How are quality issues identified, addressed, and prevented?",3,
+
+Output Interpretability,1.6.7,"Assess the interpretability of model outputs for intended users, including: clarity of presentation, contextual information, confidence metrics, underlying factors, and explanatory notes. How is user comprehension of outputs ensured?",2,
+
+Business Integration,1.6.8,"Detail how model outputs are integrated into broader business processes, including: system interfaces, workflow integration, decision support frameworks, and operational procedures. How seamless is this integration?",2,
+
+Output Monitoring,1.6.9,"Describe the monitoring framework for model outputs, including: performance metrics, drift detection, anomaly identification, quality thresholds, and alerting mechanisms. How are output trends and patterns analyzed?",3,
+
+Feedback Mechanisms,1.6.10,"Detail the mechanisms for collecting and incorporating user feedback on model outputs, including: feedback channels, analysis methodology, improvement processes, and implementation timelines. How is output quality continuously improved?",2,
+
+2. Model Assessment,,,,"Based on the information provided in Section 1, this section determines whether the AI Technology qualifies as a Model under the governance framework."
+
+Model Definition Assessment,2.1.1,"Evaluate whether this AI Technology meets the definition of a Model: ""A quantitative method, system or approach, that applies statistical, economic, financial, or mathematical theories, techniques, and assumptions to process input data into quantitative or qualitative estimates."" Provide a detailed assessment against each component of this definition.",3,
+
+Inherent Uncertainty,2.1.2,"Assess whether the outputs of the AI Technology are inherently uncertain (estimates, forecasts, predictions, or projections). Provide a detailed analysis of the sources and nature of this uncertainty and their implications for model classification.",3,
+
+Approach-specific Assumptions,2.1.3,"Identify and analyze all approach-specific assumptions (reference Section 1.2) that would qualify this as a Model. Provide a detailed assessment of how these assumptions impact model behavior, limitations, and reliability.",3,
+
+Input Uncertainty Analysis,2.1.4,"Evaluate whether the approach relies on inputs and/or their selection that are uncertain, including those that are wholly/partially qualitative, opaque, or based on expert judgment. Detail how these uncertain inputs affect model classification.",3,
+
+Multiple Model Dependency,2.1.5,"Assess whether the approach relies on outputs of other Models, especially multiple Models. Detail the dependency structure, integration methodology, and implications for model classification.",3,
+
+Calibration Requirements,2.1.6,"Determine whether any of the approach's inputs and/or methodology require calibration (reference Section 1.4). Provide a detailed analysis of calibration requirements and their significance for model classification.",2,
+
+Non-analytical Methodology,2.1.7,"Evaluate whether the approach is based on a non-analytical method (e.g., Monte Carlo Simulations, Finite Difference Method). Detail the methodology and its implications for model classification.",3,
+
+Exclusion Justification,2.1.8,"If the above conditions are not applicable to the quantitative approach but there are special reasons to consider it a Model, provide a comprehensive justification. Detail the unique characteristics that warrant Model classification despite not meeting standard criteria.",3,
+
+Classification Justification,2.1.9,"If at least one of the above conditions is applicable but the quantitative approach is not identified as a Model, provide a detailed justification. Explain why Model classification is not appropriate despite meeting one or more criteria.",3,
+
+Assessment Conclusion,2.1.10,"Provide a definitive conclusion (Model or non-Model) based on the comprehensive assessment above. This determination, made by the owner of the calculation, establishes the governance requirements applicable to this AI Technology.",3,
+
+3. Model Complexity Assessment,,,,"Model Complexity reflects the inherent risks within each component of the AI Technology, including inputs/data, assumptions, methodology, implementation and outputs. Complexity is assessed using risk factors and assigned based on the sum of risk factor scores."
+
+Industry Acceptance Assessment,3.1.1,"Evaluate whether this is a non-standard Model based on a special set of Model assumptions and/or a large set of non-standard inputs. Per guidance, a non-standard Model is inherently more risky and should be rated higher. Provide detailed analysis of all non-standard elements and their risk implications.",3,
+
+Assumption Suitability,3.1.2,"Assess whether Model assumptions are fully suitable to Model intended use. A Model is inherently more risky if Model assumptions are NOT fully suitable to intended use. Provide a comprehensive assessment of assumption adequacy relative to business requirements.",3,
+
+Input Sensitivity Analysis,3.1.3,"Conduct a detailed sensitivity analysis of the Model to its assumptions and Expert Judgment inputs. A Model is riskier if its outputs are highly sensitive to one or more of its major assumptions or expert judgment inputs. Quantify sensitivity measures for key inputs.",3,
+
+Hyperparameter Complexity,3.1.4,"Evaluate whether the algorithm contains a high number of hyperparameters (e.g., learning rate, number of features). A Model is inherently more risky if the algorithm contains a high number of hyperparameters. Catalog all hyperparameters and their optimization methodology.",3,
+
+Data Structure Complexity,3.1.5,"Assess Model Risk associated with complex data structures, unstructured data, or low-quality inputs. Model Risk increases with complex data structures, unstructured data, or low-quality inputs. Provide a detailed analysis of data complexity factors.",3,
+
+Feature Volume Assessment,3.1.6,"Evaluate whether the AI Model uses a large number of features/variables. Model Risk increases when a large number of features/variables increases Model Risk. Quantify feature complexity and its impact on model risk.",3,
+
+Performance Limitations,3.1.7,"Assess Model Risk arising from Model performance limitations under current market or extreme conditions. Provide detailed analysis of performance under various scenarios and stress conditions.",3,
+
+Infrastructure Automation,3.1.8,"Evaluate the level of Model infrastructure automation, including straight-through processing capabilities. An automated Model infrastructure reduces the risk of operational error. Detail automation level, control points, and risk reduction measures.",2,
+
+Model Dependency Risk,3.1.9,"Assess Model Risk associated with complex or large number of feeder Models. Model Risk increases when complex or large number of feeder Models are used. Provide a detailed dependency map and risk analysis.",3,
+
+Complexity Score Calculation,3.1.10,"Based on the assessments above, calculate the total complexity score (out of 19). Refer to the scoring matrix: Low (<=5), Medium (6-11), High (>=12). Provide detailed scoring calculation and justification for each factor.",3,
+
+Complexity Classification,3.1.11,"Based on the calculated score, assign the appropriate Complexity Classification (Low/Medium/High). This classification has direct implications for the Model Tier assignment and governance requirements.",3,
+
+4. Model Materiality Assessment,,,,"In the AI context, Model Materiality is determined by Model Use and the level of application of human review/oversight into the AI technology development, training and output (Human in the Loop - HITL)."
+
+Model Use Classification,4.1.1,"Determine whether model outputs are used for external-facing activity (e.g., client, regulator). Per the Model Use Rating table, external-facing use represents High materiality. Provide a detailed assessment of external usage scenarios, frequency, and significance.",3,
+
+Internal Impact Assessment,4.1.2,"Assess whether model outputs are used for internal facing activity with direct impact on external output (e.g., risk management). Per the Model Use Rating table, this represents Medium materiality. Detail the impact flow from internal use to external outcomes.",2,
+
+Operational Efficiency Use,4.1.3,"Evaluate whether model outputs are used for internal facing activity aimed at increasing operational efficiencies (e.g., data analytics, chatbot, translation). Per the Model Use Rating table, this represents Low materiality. Quantify efficiency benefits and usage patterns.",1,
+
+HITL Implementation Level,4.1.4,"Assess the level of Human in the Loop implementation based on the HITL assessment matrix: Minimal (basic prompt engineering, no systematic review, no feedback loop), Standard (structured management, regular sampling, basic feedback), or Enhanced (comprehensive monitoring, active optimization, documented process). Provide detailed evidence for the assigned level.",3,
+
+Prompt Engineering Assessment,4.1.5,"Evaluate the sophistication of prompt engineering implemented: Basic prompt engineering only (Minimal), Structured prompt management and version control (Standard), or Active prompt optimization based on user feedback (Enhanced). Detail the prompt management methodology and governance.",2,
+
+Output Review Process,4.1.6,"Assess the systematic review of outputs: No systematic review (Minimal), Regular sampling and review (Standard), or Comprehensive output monitoring and quality control (Enhanced). Detail review procedures, sampling methodology, and documentation practices.",2,
+
+Feedback Collection Framework,4.1.7,"Evaluate the feedback collection process: No feedback loop (Minimal), Basic feedback collection from end users (Standard), or Systematic collection and incorporation of SME feedback (Enhanced). Detail the feedback mechanisms, analysis methodology, and implementation procedures.",2,
+
+Retrieval Quality Assessment,4.1.8,"Assess the evaluation of retrieval accuracy: No evaluation (Minimal), Periodic review of retrieval quality (Standard), or Regular evaluation of retrieval accuracy and relevance (Enhanced). Detail the evaluation methodology, metrics, and improvement processes.",2,
+
+Edge Case Management,4.1.9,"Evaluate the process for handling edge cases: No process (Minimal), Periodic review (Standard), or Documented review process for edge cases (Enhanced). Detail the identification, documentation, and resolution procedures for edge cases.",2,
+
+Knowledge Base Management,4.1.10,"Assess the management of the knowledge base: No assessment (Minimal), Periodic review (Standard), or Regular assessment of knowledge base quality and coverage (Enhanced). Detail the assessment methodology, quality metrics, and improvement processes.",2,
+
+Model Materiality Matrix Application,4.1.11,"Apply the Model Materiality matrix to determine the appropriate materiality level based on the combination of HITL level (Minimal/Standard/Enhanced) and Model Use (High/Medium/Low). Reference the provided matrix to determine the final Materiality Rating (High/Medium/Low/Very Low).",3,
+
+Materiality Justification,4.1.12,"Provide a comprehensive justification for the assigned Materiality Rating, referencing specific evidence from the HITL and Model Use assessments. This rating directly impacts the Model Tier assignment and governance requirements.",3,
+
+5. Model Tier Assessment,,,,"Model Tier is determined by combining Model Complexity and Model Materiality according to the specified tiering matrix."
+
+Tier Determination,5.1.1,"Using the Model Complexity (Section 3) and Model Materiality (Section 4) assessments, apply the Model Tier matrix to determine the appropriate Tier. The matrix combines Complexity (High/Medium/Low) and Materiality (High/Medium/Low/Very Low) to assign a Tier from 1 to 4, with Tier 1 representing the highest level of governance and Tier 4 the lowest.",3,
+
+Tier Justification,5.1.2,"Provide a comprehensive justification for the proposed Model Tier assignment, referencing specific factors from the Complexity and Materiality assessments that influenced the determination. This justification should address how the assigned Tier reflects the risk profile of the model.",3,
+
+Governance Implications,5.1.3,"Detail the governance implications of the assigned Model Tier, including: documentation requirements, review frequency, testing protocols, validation standards, approval authorities, and ongoing monitoring. Ensure alignment with organizational governance standards for the assigned Tier.",2,
+
+Alternative Tier Consideration,5.1.4,"If an alternative Tier was considered, provide a detailed rationale for why it was not selected. Include comparative analysis of risk factors under different Tier classifications and justification for the final determination.",2,
+
+Tier Assignment Impact,5.1.5,"Assess the business impact of the assigned Model Tier, including: resource requirements, timeline implications, operational constraints, and compliance obligations. How will these requirements be addressed in the implementation plan?",2,
+
+6. Confirmation,,,,"A confirmation from the Model Identification Owner(s) or Owner of the Model must be provided that they agree with the AI Technology assessment including Model Tier assignment."
+
+Owner Confirmation,6.1.1,"Confirm that the Model Identification Owner(s) or Owner of the Model has provided formal confirmation (via attached email or equivalent) that they agree with the comprehensive AI Technology assessment, including the Model Tier assignment. This confirmation establishes accountability for the assessment.",3,
+
+Assessment Completeness,6.1.2,"Verify that all sections of this assessment template have been completed with appropriate detail and supporting evidence. Any sections deemed not applicable must include a supporting rationale explaining why the section does not apply.",2,
+
+Review and Challenge Process,6.1.3,"Detail the review and challenge process applied to this assessment, including: reviewer identities, areas of focus, challenge outcomes, and resolution of any discrepancies. This process ensures the assessment has been subjected to appropriate scrutiny.",2,
+
+Final Determination,6.1.4,"Provide the final determination regarding Model classification, Complexity, Materiality, and Tier assignment. This serves as the authoritative record for governance purposes.",3,
+
+Approval Documentation,6.1.5,"Confirm that all required approvals have been obtained and documented according to governance requirements. This documentation establishes the official status of the assessment.",2,
+
+7. Additional Risk Assessments,,,, 
+
+Bias Risk Assessment,7.1.1,"Conduct a comprehensive assessment of whether the AI solution requires training with information that might cause bias or discrimination (gender, race, ethnicity, age, disability, etc.). Detail potential bias sources, risk levels, and business implications.",3,
+
+Bias Controls Evaluation,7.1.2,"Evaluate all bias and fairness risk controls/metrics implemented in the model. Assess whether these have been validated through independent testing. Detail control mechanisms, testing methodology, and effectiveness measures.",2,
+
+Transparency Assessment,7.1.3,"Assess how the AI solution is evaluated for transparency and explainability. Determine whether this evaluation is conducted internally, by an independent party, or by the service provider. Detail evaluation methodology and standards.",2,
+
+Explainability Implementation,7.1.4,"Evaluate whether the AI solution has identified explainability metrics and an established process to explain how it works if requested. Detail the explainability framework, implementation approach, and effectiveness measures.",2,
+
+Documentation Completeness,7.1.5,"Assess whether comprehensive internal documentation exists, including ownership information, development process, data sources, intended use, and incident management procedures. Detail documentation coverage and accessibility.",2,
+
+Output Accuracy Evaluation,7.1.6,"Evaluate how the AI solution is assessed for accuracy of outputs against intended use. Determine whether this is conducted internally, by an independent party, or by the service provider. Detail evaluation methodology and performance metrics.",2,
+
+Error Management Framework,7.1.7,"Assess the validations built to identify and correct errors in outputs and detect unexpected model changes. Detail monitoring systems, correction workflows, and effectiveness measures.",2,
+
+Hallucination Risk Management,7.1.8,"Evaluate how hallucination risk is assessed and mitigated. Detail detection methods, controls, and mitigation strategies for managing AI hallucinations. Assess the effectiveness of these measures under various scenarios.",3,
+
+Stress Testing Protocols,7.1.9,"Assess whether stress test scenarios have been conducted to verify performance under sudden changes in business conditions or inputs. Detail test scenarios, methodologies, and results. Evaluate the comprehensiveness of stress testing.",3,
+
+Security Controls Assessment,7.1.10,"Evaluate security measures protecting against adversarial attacks or prompt injection vulnerabilities. Detail implemented controls, testing procedures, and effectiveness measures. Assess alignment with organizational security standards.",3,

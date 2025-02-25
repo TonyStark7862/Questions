@@ -1,0 +1,362 @@
+Risk category and sub-category,Ref.,Question,Risk Scores,Justification
+
+1. Description of the AI Technology,,,"For questions with options, please select one. For Yes/No/Partial questions, select 'Yes' if fully implemented, 'Partial' if in progress or partially implemented, and 'No' if not implemented.",
+
+Model Purpose and Scope,1.1.1,"Does the AI solution have clearly documented business objectives and application scope? (This helps ensure the model's purpose aligns with business needs)
+Options: Yes / No / Partial",1,
+
+Development Responsibility,1.1.2,"Is there clear documentation identifying which team developed the AI technology and their expertise? (This establishes accountability and helps verify appropriate skills were applied)
+Options: Yes / No / Partial",1,
+
+Target User Documentation,1.1.3,"Are the target users and deployment regions for the AI technology clearly specified? (This ensures alignment with regional regulations and user needs)
+Options: Yes / No / Partial",1,
+
+Implementation Architecture,1.1.4,"Is the technical implementation architecture (frameworks, infrastructure, components) fully documented? (This provides transparency into how the model was built)
+Options: Yes / No / Partial",1,
+
+Business Context Integration,1.1.5,"Is there documentation showing how the AI technology integrates with existing business processes? (This helps identify operational dependencies and impacts)
+Options: Yes / No / Partial",1,
+
+Assumptions and Limitations,,,,
+
+Model Assumptions,1.2.1,"Have all key assumptions made during model development been documented in a table with their implications and justifications? (Example: if using a single data source, the implications of potential information gaps should be documented)
+Options: Yes / No / Partial",2,
+
+Data Source Limitations,1.2.2,"Does the model rely on a single source of data/news (like Bloomberg terminal only)? (Single-source dependencies create higher risk of information gaps)
+Options: Yes / No / Multiple sources",2,
+
+Model Bias Evaluation,1.2.3,"Has the model been assessed for potential bias toward specific organizations, regions, or languages? (For example: bias toward US-based organizations or English content)
+Options: Yes - comprehensive assessment / Yes - limited assessment / No assessment",3,
+
+Geographic Limitations,1.2.4,"Are there documented geographical limitations to the model's effectiveness? (This helps users understand where the model may have reduced performance)
+Options: Yes - with mitigation plans / Yes - without mitigation plans / No limitations documented / Not applicable",2,
+
+Limitation Severity,1.2.5,"For identified limitations, has the severity been classified? (Example: a bias toward larger organizations might be classified as Medium severity)
+Options: Yes - with mitigating controls / Yes - without mitigating controls / No classification / No limitations identified",2,
+
+Control Framework,1.2.6,"Are controls and guardrails implemented to address identified limitations? (This shows how the organization mitigates known model limitations)
+Options: Yes - comprehensive controls / Yes - limited controls / No controls",2,
+
+Limitations Communication,1.2.7,"Is there a process to communicate model limitations to users? (This ensures transparency about what the model can and cannot do reliably)
+Options: Yes - formal process / Yes - informal process / No process",2,
+
+Inputs and Data,,,,
+
+Input Inventory,1.3.1,"Is there a complete inventory of all inputs to the AI model, including all data sources and parameters? (This inventory should document everything the model uses to generate outputs)
+Options: Yes - comprehensive / Yes - partial / No inventory",2,
+
+Pre-processing Documentation,1.3.2,"Are data pre-processing steps (tokenization, normalization, entity recognition) fully documented? (This shows how raw data is prepared for model use)
+Options: Yes - with validation methods / Yes - without validation / No documentation",2,
+
+RAG Implementation,1.3.3,"Does the model use Retrieval-Augmented Generation (RAG) to optimize outputs? (RAG enhances models by retrieving relevant information to improve responses)
+Options: Yes - fully implemented / Yes - partially implemented / No - not implemented / Not applicable",2,
+
+Internal Data Source Usage,1.3.4,"Does the model use internal XYZ data sources (Sharepoint, Jira, Gitlab, Confluence)? If yes, are appropriate security controls documented? (This identifies internal data dependencies)
+Options: Yes - with security controls / Yes - without security controls / No internal sources used",2,
+
+Feeder Model Dependencies,1.3.5,"Does the model depend on outputs from other AI Models or Agents? (Dependency on multiple models increases complexity and risk)
+Options: No dependencies / 1-2 models / 3-5 models / 6+ models",3,
+
+Input Update Frequency,1.3.6,"Is there documentation of how frequently inputs and parameters are updated? (Regular updates help maintain model accuracy)
+Options: Yes - with justification / Yes - without justification / No documentation",2,
+
+Input Sensitivity,1.3.7,"Has the model's sensitivity to input variations been tested and documented? (This shows how much output changes with small input changes)
+Options: Yes - comprehensive testing / Yes - limited testing / No testing",3,
+
+Expert Judgment Inputs,1.3.8,"Does the model incorporate expert judgments or opaque parameters? (These inputs aren't derived from data and may introduce bias)
+Options: Yes - with controls / Yes - without controls / No expert judgments",3,
+
+Input Drift Monitoring,1.3.9,"Is there a system to detect and address input drift? (Input drift occurs when production data differs from training data)
+Options: Yes - automated monitoring / Yes - periodic checks / No monitoring",3,
+
+Data Quality Framework,1.3.10,"Is there a framework for measuring and ensuring input data quality? (This helps prevent poor model performance from low-quality data)
+Options: Yes - with metrics / Yes - without metrics / No framework",2,
+
+Calibration and Tuning,,,,
+
+Calibration Methodology,1.4.1,"Is there a documented methodology for calibrating model parameters? (Calibration ensures the model performs as expected)
+Options: Yes - with validation approach / Yes - without validation / No methodology",2,
+
+Calibration Frequency,1.4.2,"Is the frequency of model calibration specified and justified? (Regular calibration helps maintain model accuracy)
+Options: Yes - with justification / Yes - without justification / No specification",2,
+
+External Knowledge Integration,1.4.3,"Is there documentation of how external knowledge is integrated into the model? (This may include RAG, fine-tuning, or other methods)
+Options: Yes - with validation / Yes - without validation / No external knowledge / Not applicable",2,
+
+Calibration Validation,1.4.4,"Is there a process to validate calibration effectiveness? (This confirms calibration actually improves model performance)
+Options: Yes - with metrics / Yes - without metrics / No validation process",2,
+
+Parameter Sensitivity,1.4.5,"Has sensitivity analysis been conducted for calibrated parameters? (This identifies which parameters most affect outputs)
+Options: Yes - comprehensive / Yes - limited / No analysis",3,
+
+Calibration Governance,1.4.6,"Is there governance oversight for calibration activities? (This ensures proper controls around parameter changes)
+Options: Yes - formal oversight / Yes - informal oversight / No oversight",2,
+
+Numerical Methods,,,,
+
+Numerical Methodology,1.5.1,"Are the numerical methods used in the model fully documented? (This includes analytical approaches and algorithms)
+Options: Yes - with justification / Yes - without justification / No documentation / Not applicable",2,
+
+Non-analytical Methods,1.5.2,"Does the model use non-analytical methods like Monte Carlo Simulations or Finite Difference Methods? (These methods introduce additional complexity)
+Options: Yes - extensively / Yes - limited use / No",3,
+
+Numerical Accuracy,1.5.3,"Is there a methodology for validating numerical accuracy? (This ensures calculations are performing as expected)
+Options: Yes - with thresholds / Yes - without thresholds / No methodology / Not applicable",2,
+
+Error Management,1.5.4,"Is there a framework for detecting and managing numerical errors? (This prevents error propagation through the model)
+Options: Yes - automated / Yes - manual / No framework / Not applicable",2,
+
+Mathematical Foundation,1.5.5,"Is the mathematical foundation of the model documented? (This includes theories and formulas underlying the model)
+Options: Yes - with peer review / Yes - without review / No documentation / Not applicable",3,
+
+Outputs and Results,,,,
+
+Output Specification,1.6.1,"Are all AI technology outputs specified with formats, structures, and delivery mechanisms? (This documents what the model produces)
+Options: Yes - comprehensive / Yes - limited / No specification",2,
+
+Output Usage Context,1.6.2,"Is documentation provided on how model outputs are used within business processes? (This shows the impact of model outputs)
+Options: Yes - with criticality assessment / Yes - without assessment / No documentation",3,
+
+External Communications,1.6.3,"Are model outputs used for external communications like client or regulatory reporting? (External use increases risk and governance requirements)
+Options: Yes - directly / Yes - indirectly / No",3,
+
+UI Content Generation,1.6.4,"Does the model generate content for user interfaces? (UI content requires additional controls for appropriateness)
+Options: Yes - with validation / Yes - without validation / No",2,
+
+SQL Generation,1.6.5,"Does the model generate SQL queries from natural language? (This capability requires security controls)
+Options: Yes - with security controls / Yes - without controls / No",3,
+
+Output Quality Control,1.6.6,"Is there a framework for ensuring output quality? (This verifies outputs meet business requirements)
+Options: Yes - automated / Yes - manual / No framework",3,
+
+Output Validation,1.6.7,"Are there specific validations to identify and correct errors in outputs? (This catches issues before affecting decisions)
+Options: Yes - comprehensive / Yes - limited / No validations",3,
+
+Output Monitoring,1.6.8,"Is there a system for monitoring outputs for drift or unexpected behavior? (This detects when model performance degrades)
+Options: Yes - with alerts / Yes - without alerts / No monitoring",3,
+
+2. Model Assessment,,,,
+
+Model Definition Alignment,2.1.1,"Does this AI technology meet the definition of a Model: \"A quantitative method that processes input data into estimates that are inherently uncertain\"? (This determines if formal Model governance applies)
+Options: Yes - fully meets definition / Yes - partially meets / No",3,
+
+Inherent Uncertainty,2.1.2,"Do the outputs of the AI technology have inherent uncertainty (estimates, forecasts, predictions)? (Uncertain outputs are a key indicator of Model classification)
+Options: Yes - significant uncertainty / Yes - limited uncertainty / No uncertainty",3,
+
+Approach-specific Assumptions,2.1.3,"Does the approach rely on specific assumptions as outlined in section 1.2? (Model-specific assumptions indicate formal Model classification)
+Options: Yes - multiple assumptions / Yes - limited assumptions / No specific assumptions",3,
+
+Input Uncertainty,2.1.4,"Does the approach use inputs that are qualitative, opaque, or based on expert judgment? (Uncertain inputs are a key Model indicator)
+Options: Yes - extensively / Yes - limited use / No uncertain inputs",3,
+
+Multiple Model Dependency,2.1.5,"Does the approach rely on outputs from other Models? (Model dependencies indicate formal Model classification)
+Options: Yes - multiple dependencies / Yes - limited dependencies / No dependencies",3,
+
+Calibration Requirement,2.1.6,"Do any inputs or methodology require calibration? (Calibration needs are a Model indicator)
+Options: Yes - regular calibration / Yes - occasional calibration / No calibration needed",2,
+
+Non-analytical Methodology,2.1.7,"Is the approach based on non-analytical methods (Monte Carlo, etc.)? (Non-analytical methods indicate Model classification)
+Options: Yes - primarily / Yes - partially / No",3,
+
+Model Classification Decision,2.1.8,"Based on assessment against the criteria above, is this AI technology classified as a Model? (This determines governance requirements)
+Options: Yes - Model / No - Not a Model",3,
+
+3. Model Complexity Assessment,,,,
+
+Industry Acceptance,3.1.1,"Is this a non-standard Model based on special assumptions or non-standard inputs? (Note: Non-standard models are inherently riskier and require more controls)
+Options: Yes - highly non-standard / Yes - somewhat non-standard / No - standard approach",3,
+
+Assumption Suitability,3.1.2,"Are all Model assumptions fully suitable for the Model's intended use? (Unsuitable assumptions increase risk)
+Options: Yes - fully suitable / Yes - mostly suitable / No - significant gaps",3,
+
+Input Sensitivity Level,3.1.3,"How sensitive are the Model outputs to assumptions or expert judgment inputs? (Higher sensitivity increases risk)
+Options: High sensitivity - small input changes cause large output changes / Medium sensitivity / Low sensitivity",3,
+
+Hyperparameter Volume,3.1.4,"Does the algorithm contain a high number of hyperparameters? (More hyperparameters increase complexity and risk)
+Options: High (>10) / Medium (5-10) / Low (<5) / Not applicable",3,
+
+Data Complexity Level,3.1.5,"What is the complexity level of data structures used? (Complex or unstructured data increases risk)
+Options: High - mostly unstructured / Medium - mixed / Low - structured / Not applicable",3,
+
+Feature Volume,3.1.6,"How many features/variables does the Model use? (More features increase complexity)
+Options: High (>20) / Medium (10-20) / Low (<10) / Not applicable",3,
+
+Performance Under Stress,3.1.7,"Has the Model been tested under extreme conditions? (Stress testing helps identify potential failure modes)
+Options: Yes - comprehensive testing / Yes - limited testing / No stress testing",3,
+
+Infrastructure Automation,3.1.8,"Is there an automated Model infrastructure with straight-through processing? (Automation reduces operational risk)
+Options: Yes - fully automated / Yes - partially automated / No - mostly manual",2,
+
+Model Dependencies Quantity,3.1.9,"How many feeder Models does this Model depend on? (More dependencies increase complexity)
+Options: High (>3) / Medium (1-3) / No dependencies",3,
+
+Complexity Score Calculation,3.1.10,"What is the total complexity score based on the above factors (out of 19)? (This determines complexity classification)
+Options: Low (<=5) / Medium (6-11) / High (>=12)",3,
+
+4. Model Materiality Assessment,,,,
+
+External-Facing Usage,4.1.1,"Are model outputs used for external-facing activities (client, regulator)? (External use represents High materiality as defined in the Model Use Rating table)
+Options: Yes - extensively / Yes - occasionally / No",3,
+
+Internal Impact on External Output,4.1.2,"Are outputs used for internal activities with direct impact on external output (e.g., risk management)? (This represents Medium materiality)
+Options: Yes - significant impact / Yes - limited impact / No impact",2,
+
+Operational Efficiency Usage,4.1.3,"Are outputs used for internal activities aimed at increasing operational efficiencies (e.g., data analytics, translation)? (This represents Low materiality)
+Options: Yes - primary purpose / Yes - secondary purpose / No",1,
+
+Human Oversight Implementation,4.1.4,"What level of Human in the Loop (HITL) oversight is implemented? (This is based on the HITL assessment matrix)
+Options: Minimal - basic oversight only / Standard - structured oversight / Enhanced - comprehensive oversight",3,
+
+Prompt Engineering Level,4.1.5,"What level of prompt engineering is implemented? (According to HITL criteria)
+Options: Minimal - basic engineering only / Standard - structured management and version control / Enhanced - active optimization based on feedback",2,
+
+Output Review Process Maturity,4.1.6,"What level of systematic review exists for model outputs? (According to HITL criteria)
+Options: Minimal - no systematic review / Standard - regular sampling and review / Enhanced - comprehensive monitoring",2,
+
+Feedback Collection Framework,4.1.7,"What level of feedback collection exists? (According to HITL criteria)
+Options: Minimal - no feedback loop / Standard - basic collection from users / Enhanced - systematic collection and SME incorporation",2,
+
+Edge Case Management,4.1.8,"What level of edge case management exists? (According to HITL criteria)
+Options: Minimal - no process / Standard - periodic review / Enhanced - documented process",2,
+
+Knowledge Base Management,4.1.9,"What level of knowledge base quality management exists? (According to HITL criteria)
+Options: Minimal - no assessment / Standard - periodic review / Enhanced - regular assessment",2,
+
+Materiality Rating Determination,4.1.10,"Based on the Model Use and HITL levels above, what is the Model Materiality rating? (The matrix combines HITL level and Model Use to determine materiality)
+Options: High / Medium / Low / Very Low",3,
+
+5. Model Tier Assessment,,,,
+
+Model Tier Classification,5.1.1,"Based on the Model Complexity score (Section 3) and Model Materiality rating (Section 4), what is the Model Tier? (The Model Tier matrix combines these factors to assign a Tier from 1-4, with Tier 1 having the highest governance requirements)
+Options: Tier 1 / Tier 2 / Tier 3 / Tier 4",3,
+
+Governance Alignment,5.1.2,"Are the governance requirements for the assigned Model Tier documented and implemented? (This ensures proper controls based on risk)
+Options: Yes - fully implemented / Yes - partially implemented / No",2,
+
+Tier Compliance Gap Analysis,5.1.3,"Has a gap analysis been conducted between current practices and Tier requirements? (This identifies areas needing improvement)
+Options: Yes - with remediation plan / Yes - without remediation plan / No analysis",3,
+
+Tier Reassessment Framework,5.1.4,"Is there a framework for reassessing the Model Tier assignment over time? (This ensures classification remains appropriate)
+Options: Yes - with triggers defined / Yes - periodic only / No framework",2,
+
+6. Confirmation,,,,
+
+Owner Confirmation Status,6.1.1,"Has the Model Identification Owner(s) or Owner of the Model provided formal confirmation of the assessment and Tier assignment? (This ensures accountability)
+Options: Yes - fully confirmed / Yes - partially confirmed / No confirmation",3,
+
+Assessment Completeness,6.1.2,"Have all sections of the assessment template been completed with appropriate detail? (For N/A sections, supporting rationale must be provided)
+Options: Yes - fully completed / Yes - partially completed / No - significant gaps",2,
+
+Review Process Documentation,6.1.3,"Is the review and challenge process for this assessment documented? (This validates thoroughness)
+Options: Yes - with reviewer details / Yes - without details / No documentation",2,
+
+Final Determination Record,6.1.4,"Is there a documented final determination regarding Model classification, Complexity, Materiality, and Tier? (This serves as the governance record)
+Options: Yes - comprehensive / Yes - partial / No record",3,
+
+7. Bias and Fairness Assessment,,,,
+
+Bias Risk Assessment,7.1.1,"Has potential bias in training data been assessed? (Bias in data like gender, race, ethnicity can affect fairness)
+Options: Yes - comprehensive assessment / Yes - limited assessment / No assessment",3,
+
+Bias Control Implementation,7.1.2,"Are controls implemented to detect and mitigate bias in model outputs? (Controls ensure fairness)
+Options: Yes - with effectiveness metrics / Yes - without metrics / No controls",2,
+
+Fairness Metrics,7.1.3,"Are specific fairness metrics defined and monitored? (Metrics quantify model fairness)
+Options: Yes - comprehensive metrics / Yes - limited metrics / No metrics",2,
+
+Bias Testing,7.1.4,"Has the model undergone testing for bias using diverse test datasets? (Testing verifies controls work)
+Options: Yes - extensive testing / Yes - limited testing / No testing",3,
+
+External Bias Audit,7.1.5,"Has an independent external bias audit been conducted? (External validation provides objectivity)
+Options: Yes - with remediation / Yes - without remediation / No audit",2,
+
+8. Transparency and Explainability,,,,
+
+Explainability Framework,8.1.1,"Does the model have a framework for explaining how decisions or outputs are generated? (This helps users understand results)
+Options: Yes - comprehensive / Yes - limited / No framework",2,
+
+Documentation Completeness,8.1.2,"Is there comprehensive internal documentation covering ownership, development, data sources, and intended use? (Documentation supports transparency)
+Options: Yes - comprehensive / Yes - partial / No - minimal",2,
+
+Output Rationale,8.1.3,"Can the model provide rationales for its outputs when requested? (Explaining results builds trust)
+Options: Yes - detailed rationales / Yes - limited rationales / No capability",3,
+
+Confidence Metrics,8.1.4,"Does the model provide confidence metrics with its outputs? (This helps users assess reliability)
+Options: Yes - with explanation / Yes - without explanation / No metrics",2,
+
+Transparency Level,8.1.5,"What level of transparency is provided to end users about model limitations? (Transparency builds appropriate trust)
+Options: High - all limitations disclosed / Medium - major limitations only / Low - minimal disclosure",3,
+
+9. Performance and Monitoring,,,,
+
+Accuracy Evaluation Methodology,9.1.1,"Is there a documented methodology for evaluating output accuracy? (This ensures outputs meet requirements)
+Options: Yes - with benchmarks / Yes - without benchmarks / No methodology",2,
+
+Error Management Framework,9.1.2,"Are there specific validations to identify and correct errors in outputs? (This prevents wrong decisions)
+Options: Yes - automated / Yes - manual / No framework",2,
+
+Hallucination Detection,9.1.3,"Does the system have controls to detect and address AI hallucinations? (Hallucinations are fabricated outputs)
+Options: Yes - automated detection / Yes - manual review / No controls",3,
+
+Performance Metrics,9.1.4,"Are key performance indicators (KPIs) defined and monitored for the model? (Metrics track effectiveness)
+Options: Yes - comprehensive set / Yes - limited set / No defined KPIs",2,
+
+Drift Monitoring,9.1.5,"Is there a system to detect model drift (when performance degrades over time)? (Drift indicates model needs attention)
+Options: Yes - automated monitoring / Yes - periodic checks / No monitoring",3,
+
+Performance Deterioration Thresholds,9.1.6,"Are there defined thresholds that trigger model review if performance deteriorates? (Thresholds ensure timely intervention)
+Options: Yes - with automated alerts / Yes - manual monitoring / No thresholds",2,
+
+Performance Under Stress,9.1.7,"Has the model been stress tested under extreme conditions or inputs? (Stress testing finds breaking points)
+Options: Yes - comprehensive scenarios / Yes - limited scenarios / No stress testing",3,
+
+10. Security and Access Controls,,,,
+
+Security Controls,10.1.1,"Are security measures implemented against adversarial attacks or prompt injection? (These attacks manipulate AI behavior)
+Options: Yes - comprehensive controls / Yes - limited controls / No specific controls",3,
+
+Access Control Framework,10.1.2,"Are there controls preventing unauthorized access or modification of the model or parameters? (This prevents tampering)
+Options: Yes - robust controls / Yes - basic controls / No framework",3,
+
+Data Protection,10.1.3,"Are measures in place to protect sensitive data used or generated by the model? (This ensures data security)
+Options: Yes - comprehensive measures / Yes - basic measures / No specific measures",3,
+
+Security Testing,10.1.4,"Has the model undergone security testing including penetration testing? (Testing verifies control effectiveness)
+Options: Yes - comprehensive testing / Yes - limited testing / No testing",3,
+
+Incident Response Plan,10.1.5,"Is there an incident response plan specifically for AI-related security incidents? (This ensures quick remediation)
+Options: Yes - with regular drills / Yes - without drills / No specific plan",2,
+
+11. Compliance and Risk Management,,,,
+
+Regulatory Compliance,11.1.1,"Has the model been assessed for compliance with applicable AI regulations? (This prevents legal issues)
+Options: Yes - comprehensive assessment / Yes - limited assessment / No assessment",3,
+
+Ethics Assessment,11.1.2,"Has an ethical assessment of the model been conducted? (This evaluates societal impacts)
+Options: Yes - with framework / Yes - without framework / No assessment",2,
+
+Privacy Impact,11.1.3,"Has a privacy impact assessment been conducted for data used by the model? (This ensures privacy compliance)
+Options: Yes - comprehensive / Yes - limited / No assessment",3,
+
+Risk Appetite Alignment,11.1.4,"Has the model risk been assessed against organizational risk appetite? (This ensures appropriate risk levels)
+Options: Yes - formally documented / Yes - informally assessed / No assessment",3,
+
+Third-party Risk,11.1.5,"For any third-party components, has a comprehensive risk assessment been conducted? (This addresses supply chain risk)
+Options: Yes - with controls / Yes - without controls / No assessment / Not applicable",3,
+
+12. Lifecycle Management,,,,
+
+Development Documentation,12.1.1,"Is the model development lifecycle documented with quality gates and approvals? (This ensures proper development)
+Options: Yes - comprehensive / Yes - partial / No documentation",2,
+
+Change Management,12.1.2,"Is there a documented change management process for the model? (This controls model modifications)
+Options: Yes - with testing requirements / Yes - without testing / No process",2,
+
+Version Control,12.1.3,"Is there a version control system for model code, data, and parameters? (This tracks all changes)
+Options: Yes - comprehensive / Yes - partial / No version control",2,
+
+Retirement Planning,12.1.4,"Is there a documented plan for model retirement and transition? (This ensures business continuity)
+Options: Yes - with criteria / Yes - without criteria / No plan",2,
+
+Business Continuity,12.1.5,"Are business continuity and disaster recovery plans documented? (This addresses failures)
+Options: Yes - with testing / Yes - without testing / No plans",3,

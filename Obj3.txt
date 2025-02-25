@@ -1,0 +1,111 @@
+Got it. Below is a **structured objective questionnaire** strictly based on the document images you provided. Each question includes **context explanations** so the solution owner can answer without referring to external materials.  
+
+---
+
+# **AI Model Assessment Questionnaire**  
+
+This questionnaire is designed to assess the AI solution and its adherence to model governance, risk, compliance, and performance standards. All questions require a **Yes/No** or specific selection-based response. **Answer each question carefully.**  
+
+---
+
+## **Section 1: Data Handling & Model Inputs**  
+
+1. **Is your solution ensuring that all input data is validated before being used for training or inference?**  
+2. **Does your solution account for missing or incomplete data in the input sources?**  
+3. **Is there a preprocessing step applied to raw data before model training?**  
+4. **Does your solution handle both structured (tables, databases) and unstructured data (text, images, logs)?**  
+5. **Are all datasets used in the model labeled correctly and consistently?**  
+6. **Does your solution perform any bias checks on the training data before model development?**  
+7. **Is the input data regularly updated to reflect real-world changes?**  
+8. **Are automated validation rules implemented to detect anomalies or outliers in input data?**  
+
+---
+
+## **Section 2: Model Performance & Monitoring**  
+
+9. **Does your AI model track data drift over time?** *(Data drift occurs when input data distributions change over time, potentially degrading model performance.)*  
+10. **Does your solution monitor for model drift?** *(Model drift refers to performance degradation due to changes in the environment or data patterns.)*  
+11. **Is your solution designed to trigger a retraining process when significant data or model drift is detected?**  
+12. **Are there automated performance monitoring mechanisms for the AI model?**  
+13. **Does your model have confidence scoring to indicate reliability in predictions?**  
+14. **Are model predictions validated against real-world results to ensure accuracy?**  
+15. **Does your solution implement a feedback loop where incorrect predictions help improve future model performance?**  
+16. **Are users notified when the model’s confidence in predictions is low?**  
+
+---
+
+## **Section 3: Model Usage & Decision-Making**  
+
+17. **Is the AI model designed for automated decision-making without human intervention?**  
+18. **Does your solution include human oversight for reviewing critical AI-generated outputs?**  
+19. **Are AI-generated decisions reversible or adjustable based on human review?**  
+20. **Does your model generate explanations for its decisions that can be understood by non-technical users?**  
+21. **Is there a mechanism to override incorrect AI-generated decisions?**  
+22. **Does your solution use real-time data for inference, or does it rely solely on preprocessed data?**  
+23. **Is there a structured approval process before any AI-generated decision is acted upon?**  
+
+---
+
+## **Section 4: Model Governance & Compliance**  
+
+24. **Is your AI solution classified into one of the predefined risk tiers?** *(High-risk, medium-risk, low-risk AI solutions.)*  
+25. **Is your solution aligned with internal governance policies before deployment?**  
+26. **Are periodic governance reviews conducted to ensure compliance with AI policies?**  
+27. **Does your AI model comply with applicable regulatory requirements?** *(E.g., GDPR, industry-specific AI ethics guidelines.)*  
+28. **Are there documented records of model development, training datasets, and test results?**  
+29. **Does your solution provide audit logs for AI-generated decisions?**  
+30. **Is there a formal process for handling user complaints or challenges regarding AI decisions?**  
+
+---
+
+## **Section 5: AI Model Risks & Failures**  
+
+31. **Has a formal risk assessment been conducted for your AI model?**  
+32. **Is the AI model regularly tested against adversarial inputs (i.e., inputs designed to exploit vulnerabilities)?**  
+33. **Does your solution include built-in safeguards to prevent biased decision-making?**  
+34. **Are there automated mechanisms to detect when the model’s performance drops below an acceptable threshold?**  
+35. **Does your solution have a rollback mechanism if an AI model update leads to unexpected failures?**  
+36. **Is there a clear accountability structure defining who is responsible for AI model failures or unintended consequences?**  
+37. **Does your solution include monitoring for unintended ethical, financial, or reputational risks?**  
+
+---
+
+## **Section 6: AI Model Optimization & Maintenance**  
+
+38. **Does your AI model undergo scheduled retraining at defined intervals?**  
+39. **Is retraining frequency determined based on model performance degradation?**  
+40. **Are optimization techniques used to improve model efficiency (e.g., pruning, quantization, distillation)?**  
+41. **Does your solution compare old and new model versions before deploying an update?**  
+42. **Is there a performance benchmarking process before making a model live?**  
+43. **Are all AI model versions and modifications tracked in a version control system?**  
+44. **Does your model architecture allow for modular updates without requiring a full retraining cycle?**  
+
+---
+
+## **Section 7: User Interaction & Transparency**  
+
+45. **Does your solution provide clear disclosures to users that they are interacting with AI-generated outputs?**  
+46. **Are users given the option to provide feedback on AI-generated results?**  
+47. **Is the AI model’s decision-making process transparent and interpretable to end-users?**  
+48. **Does your solution prevent over-reliance on AI recommendations without human verification?**  
+49. **Are end-users trained on how to interpret AI-generated results responsibly?**  
+
+---
+
+# **Final Confirmation**  
+
+50. **Have all responses been verified and reviewed for accuracy?**  
+51. **Is there a plan in place to address any identified gaps or issues in the AI model assessment?**  
+
+---
+
+### **Submission Instructions**  
+- **All fields are mandatory.**  
+- If a question does not apply to your AI model, provide an explanation.  
+- After submission, responses will be reviewed for governance compliance.  
+
+---
+
+This questionnaire **strictly** follows the original document structure while removing unnecessary jargon. It ensures that AI solution owners **directly confirm compliance, monitoring, and governance requirements** through clear **Yes/No** or selection-based answers.  
+
+Let me know if any modifications are needed!

@@ -1,119 +1,25 @@
 
-# **AI Solution Assessment Questionnaire**  
-This questionnaire assesses **AI governance, compliance, performance, and risk mitigation**. Each question requires a **Yes/No** response unless otherwise specified. **Additional explanations** are provided where necessary to ensure clarity.  
+1. **Model Acceptance by Industry**  
+   *Does your AI solution use a market-recognized algorithm, or does it rely on non-standard assumptions and inputs?*  
+   **Context:** AI models that use widely accepted algorithms (e.g., decision trees) are generally considered less risky compared to those based on non-standard methodologies, which may require additional validation and oversight.  
 
----
+2. **Sensitivity to Model Assumptions and Expert Judgment Inputs**  
+   *Does your AI model rely on a high number of hyperparameters and expert judgment inputs?*  
+   **Context:** Models with numerous hyperparameters (e.g., learning rate, number of layers) and reliance on expert inputs are inherently more sensitive to assumptions, increasing the risk associated with incorrect or biased decision-making.  
 
-## **Section 1: AI Model Classification & Risk Tiers**  
+3. **Nature and Quality of Data and Sensitivity to Opaque Inputs**  
+   *Does your AI model use complex data structures, unstructured data, or opaque parameters such as proxy variables?*  
+   **Context:** Models that use high-quality structured data are typically lower risk, whereas those relying on complex, unstructured, or proxy data may introduce uncertainty and increase overall model risk.  
 
-1. **Has your AI model been assigned a specific risk tier before deployment, based on predefined organizational criteria?** *(Risk tiers help classify AI models based on their potential harm or regulatory impact.)*  
-2. **Does the AI solution have a structured risk evaluation process that considers model type, use case, and impact level?**  
-3. **Is there a governance committee responsible for verifying AI model classifications before deployment?**  
-4. **Are AI models that impact critical business or regulatory decisions classified under high-risk categories?**  
-5. **Does your risk assessment framework consider factors such as bias, interpretability, and external dependencies?**  
-6. **Has a mitigation plan been designed for high-risk AI solutions, including fail-safe mechanisms?**  
-7. **Are all stakeholders informed about the risk tier associated with the deployed AI model?**  
+4. **Model Performance**  
+   *Is your AI model capable of maintaining performance under extreme conditions or varying market inputs?*  
+   **Context:** AI models should be evaluated for robustness under different operational scenarios. Poor performance under stress conditions can indicate a higher risk factor, requiring mitigation strategies.  
 
----
+5. **Quality of Model Infrastructure**  
+   *Does your AI solution include an automated model infrastructure to minimize operational errors?*  
+   **Context:** Automated model pipelines that ensure compliance, documentation, and rigorous testing before deployment reduce the risk of operational failures and increase model reliability.  
 
-## **Section 2: Model Materialistic Aspects & Infrastructure**  
-
-8. **Is your AI model deployed on an infrastructure that aligns with organizational security and compliance requirements?**  
-9. **Are AI solutions deployed in an environment that ensures data security and encryption at rest and in transit?**  
-10. **Does your AI model utilize specialized hardware accelerators (GPUs, TPUs) for optimized performance, and is their availability factored into the deployment plan?**  
-11. **Has the solution undergone stress testing to evaluate infrastructure scalability under peak workloads?**  
-12. **Does the AI model include mechanisms for adaptive scaling based on real-time demand?**  
-13. **Has the deployment strategy accounted for data latency issues in cloud-based or hybrid AI models?**  
-14. **Are there contingency plans in place to migrate the AI model between different cloud providers or on-premise environments in case of service disruptions?**  
-15. **Has a formal evaluation of infrastructure costs vs. AI model efficiency been conducted to optimize resource allocation?**  
-
----
-
-## **Section 3: Data Handling & Model Inputs**  
-
-16. **Does your solution enforce strict data validation to prevent feeding erroneous, incomplete, or biased inputs into the AI model?**  
-17. **Are all datasets used for model training and inference version-controlled with clear documentation?**  
-18. **Has the data collection process been evaluated to eliminate potential bias sources before AI model training?**  
-19. **Are there automated mechanisms to identify and flag anomalies or drift in incoming data streams?**  
-20. **Is your AI model designed to handle missing or inconsistent data without negatively impacting predictions?**  
-21. **Does your organization maintain a data lineage framework that traces the source, transformation, and usage of AI training data?**  
-22. **Has a mechanism been implemented to prevent data poisoning, ensuring external entities cannot manipulate AI behavior through corrupt inputs?**  
-23. **Does your AI system comply with legal and ethical data usage policies, including anonymization and user consent?**  
-
----
-
-## **Section 4: Model Performance & Monitoring**  
-
-24. **Is there a structured framework to monitor model drift and ensure AI predictions remain accurate over time?** *(Model drift occurs when changes in data patterns reduce AI model reliability.)*  
-25. **Has a threshold been defined to trigger automatic retraining of the AI model when performance drops below an acceptable level?**  
-26. **Does your AI system incorporate explainability techniques to provide confidence scores for predictions?**  
-27. **Are there automated alerts for detecting unexpected fluctuations in model accuracy?**  
-28. **Is your AI model periodically validated against real-world scenarios to ensure continued relevance?**  
-29. **Has a benchmark testing strategy been implemented to compare multiple model versions before deploying updates?**  
-30. **Does the monitoring framework differentiate between short-term fluctuations and long-term model degradation?**  
-31. **Are logs and reports generated for all AI model decisions, ensuring traceability and compliance with regulatory standards?**  
-
----
-
-## **Section 5: AI Decision-Making & User Oversight**  
-
-32. **Does your AI solution maintain human oversight in decision-making processes that have high-risk consequences?**  
-33. **Are AI-generated decisions clearly explainable to end-users without requiring technical expertise?**  
-34. **Has a manual override mechanism been implemented for critical AI-driven outcomes?**  
-35. **Does the solution provide end-users with an option to challenge or correct AI-generated outputs?**  
-36. **Are decision logs maintained to allow post-analysis of AI-driven recommendations?**  
-37. **Has an AI ethics review been conducted to ensure that decisions made by the model align with organizational values and public trust?**  
-38. **Does your organization conduct periodic user feedback sessions to assess AI decision-making effectiveness?**  
-39. **Has bias mitigation been integrated into the AI decision-making pipeline to prevent unfair treatment of specific user groups?**  
-
----
-
-## **Section 6: Model Governance & Compliance**  
-
-40. **Does your organization have a formal AI governance framework outlining compliance, security, and audit requirements?**  
-41. **Has an independent audit been conducted to verify adherence to AI governance policies?**  
-42. **Are all AI models evaluated against established compliance regulations such as GDPR, HIPAA, or industry-specific guidelines?**  
-43. **Is there a structured approval process before deploying AI models into production?**  
-44. **Are AI-related risks reviewed and documented as part of regulatory compliance reports?**  
-45. **Is there a designated accountability structure defining ownership in case of AI-related errors or failures?**  
-46. **Has an incident response plan been established to address AI model failures and compliance breaches?**  
-47. **Is there a legal review process to assess the contractual obligations and liabilities of AI-driven decisions?**  
-
----
-
-## **Section 7: Risk Mitigation & Model Failures**  
-
-48. **Has a risk assessment been conducted to identify potential failure points in the AI system?**  
-49. **Are security controls in place to detect and prevent adversarial attacks targeting AI vulnerabilities?** *(Adversarial attacks involve manipulating AI inputs to mislead the model.)*  
-50. **Does your AI solution include fallback mechanisms when prediction confidence is low or unreliable?**  
-51. **Has an escalation mechanism been defined to handle high-impact AI failures?**  
-52. **Does your organization track and analyze AI model failures to prevent recurring issues?**  
-53. **Are potential bias-related failures documented and actively monitored for future improvements?**  
-
----
-
-## **Section 8: Model Optimization & Lifecycle Management**  
-
-54. **Are AI model updates designed to be modular, allowing component-level improvements without requiring full retraining?**  
-55. **Does your organization maintain a structured model repository to track multiple AI versions and rollbacks?**  
-56. **Is there a validation framework in place to compare old and new AI models before production deployment?**  
-57. **Are model efficiency improvements incorporated using techniques like quantization, pruning, or knowledge distillation?**  
-58. **Is there a defined process for deprecating outdated AI models and transitioning to improved versions?**  
-
----
-
-## **Section 9: User Transparency & AI Explainability**  
-
-59. **Are AI-driven recommendations presented with clear justifications rather than as black-box predictions?**  
-60. **Do users receive real-time disclosures when interacting with AI-generated decisions?**  
-61. **Has an AI literacy program been established to educate end-users on how to interpret model outputs?**  
-62. **Does the AI solution have built-in safeguards to prevent users from over-relying on its predictions?**  
-63. **Are transparency reports generated to provide stakeholders with insights into AI model behavior?**  
-
----
-
-## **Final Confirmation & Review**  
-
-64. **Have all responses been reviewed for completeness and accuracy?**  
-65. **Has an internal governance team validated this assessment before submission?**  
+6. **Model Dependency**  
+   *Does your AI model depend on complex architectures or multiple feeder models for decision-making?*  
+   **Context:** Models that rely on multiple dependencies can introduce additional risks due to cascading failures, integration issues, or compounded errors, making risk management more critical.  
 

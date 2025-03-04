@@ -61,6 +61,15 @@ def main():
     if not os.path.exists("images"):
         os.makedirs("images")
         print("Created images directory")
+        
+    # Make sure CSV files exist with proper headers
+    if not os.path.exists("posts.csv"):
+        pd.DataFrame(columns=['post_id', 'author', 'content', 'image_path', 'timestamp']).to_csv("posts.csv", index=False)
+        print("Created posts.csv")
+        
+    if not os.path.exists("comments.csv"):
+        pd.DataFrame(columns=['comment_id', 'post_id', 'author', 'content', 'parent_comment_id', 'timestamp']).to_csv("comments.csv", index=False)
+        print("Created comments.csv")
     
     # Start both processes
     streamlit_process = run_streamlit_app()

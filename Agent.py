@@ -127,11 +127,11 @@ def log_api_usage(calls=1, tokens=100, cost=0.002):
 # Create a post from an agent
 def create_agent_post(agent):
     # Generate post content using LLM
-    prompt = f"""
+    prompt = """
     Create a social media post from a person with these characteristics:
-    - Personality: {agent['personality_traits']}
-    - Interests: {agent['interests']}
-    - Writing style: {agent['writing_style']}
+    - Personality: """ + agent['personality_traits'] + """
+    - Interests: """ + agent['interests'] + """
+    - Writing style: """ + agent['writing_style'] + """
     Keep it brief and conversational.
     """
     
@@ -168,14 +168,14 @@ def create_agent_comment(agent, post_id):
     post = posts[posts['post_id'] == post_id].iloc[0]
     
     # Generate comment content using LLM
-    prompt = f"""
+    prompt = """
     You are a person with these characteristics:
-    - Personality: {agent['personality_traits']}
-    - Interests: {agent['interests']}
-    - Writing style: {agent['writing_style']}
+    - Personality: """ + agent['personality_traits'] + """
+    - Interests: """ + agent['interests'] + """
+    - Writing style: """ + agent['writing_style'] + """
     
     Create a brief comment responding to this post:
-    "{post['content']}"
+    \"""" + post['content'] + """\"
     """
     
     comment_content = abc_response(prompt)
@@ -212,14 +212,14 @@ def create_agent_reply(agent, comment_id):
     comment = comments[comments['comment_id'] == comment_id].iloc[0]
     
     # Generate reply content using LLM
-    prompt = f"""
+    prompt = """
     You are a person with these characteristics:
-    - Personality: {agent['personality_traits']}
-    - Interests: {agent['interests']}
-    - Writing style: {agent['writing_style']}
+    - Personality: """ + agent['personality_traits'] + """
+    - Interests: """ + agent['interests'] + """
+    - Writing style: """ + agent['writing_style'] + """
     
     Create a brief reply to this comment:
-    "{comment['content']}"
+    \"""" + comment['content'] + """\"
     """
     
     reply_content = abc_response(prompt)

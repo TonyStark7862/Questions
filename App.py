@@ -1,5 +1,3 @@
-#streamlit-social-app.py
-
 import streamlit as st
 import pandas as pd
 import os
@@ -97,24 +95,23 @@ if not posts.empty:
                     st.markdown(f"**{comment['author']}**: {comment['content']}")
                     st.caption(f"{comment['timestamp']}")
                     
-                    # Add reply form for each comment
-                    with st.expander("Reply", expanded=False):
-                        reply_key = f"reply_{comment['comment_id']}"
-                        reply_content = st.text_area("Write a reply", key=reply_key)
-                        if st.button("Submit Reply", key=f"btn_{reply_key}"):
-                            if user_name and reply_content:
-                                new_reply = {
-                                    'comment_id': str(uuid.uuid4()),
-                                    'post_id': post['post_id'],
-                                    'author': user_name,
-                                    'content': reply_content,
-                                    'parent_comment_id': comment['comment_id'],
-                                    'timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                                }
-                                comments = pd.concat([comments, pd.DataFrame([new_reply])], ignore_index=True)
-                                comments.to_csv("comments.csv", index=False)
-                                st.success("Reply added!")
-                                st.experimental_rerun()
+                    # Add reply form for each comment (not in an expander to avoid nesting issues)
+                    reply_key = f"reply_{comment['comment_id']}"
+                    reply_content = st.text_area("Write a reply", key=reply_key, label_visibility="collapsed")
+                    if st.button("Submit Reply", key=f"btn_{reply_key}"):
+                        if user_name and reply_content:
+                            new_reply = {
+                                'comment_id': str(uuid.uuid4()),
+                                'post_id': post['post_id'],
+                                'author': user_name,
+                                'content': reply_content,
+                                'parent_comment_id': comment['comment_id'],
+                                'timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                            }
+                            comments = pd.concat([comments, pd.DataFrame([new_reply])], ignore_index=True)
+                            comments.to_csv("comments.csv", index=False)
+                            st.success("Reply added!")
+                            st.experimental_rerun()
                     
                     # Show replies to this comment
                     replies = post_comments[post_comments['parent_comment_id'] == comment['comment_id']]

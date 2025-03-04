@@ -28,13 +28,27 @@ def run_agent_system():
         with open("agent-system.py", "r") as source:
             f.write(source.read())
     
-    # Run agent system
-    agent_process = subprocess.Popen(
-        ["python", "agent_system.py"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True
-    )
+    # Make agent system executable
+    if os.name != 'nt':  # Not Windows
+        os.chmod("agent_system.py", 0o755)
+    
+    # Run agent system with higher priority
+    if os.name == 'nt':  # Windows
+        agent_process = subprocess.Popen(
+            ["python", "agent_system.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            creationflags=subprocess.CREATE_NEW_CONSOLE
+        )
+    else:  # Linux/Mac
+        agent_process = subprocess.Popen(
+            ["python", "agent_system.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            preexec_fn=os.setsid
+        )
     
     return agent_process
 

@@ -279,9 +279,9 @@ def check_for_real_user_activity():
                     agent = agents.sample(1).iloc[0]
                     create_agent_comment(agent, post['post_id'])
         
-        # Check for comments by real users
+        # Check for ALL comments by real users, not just recent ones
         real_user_comments = comments[~comments['author'].isin(agent_usernames)]
-        recent_real_comments = real_user_comments[real_user_comments['timestamp'] > five_minutes_ago]
+        recent_real_comments = real_user_comments
         
         # Respond to recent real user comments
         if not recent_real_comments.empty:
@@ -318,8 +318,8 @@ def schedule_agent_activities():
         posts = pd.read_csv("posts.csv")
         comments = pd.read_csv("comments.csv")
         
-        # Random chance for an agent to post
-        if random.random() < 0.3:  # 30% chance
+        # Higher chance for an agent to post
+        if random.random() < 0.7:  # 70% chance
             # Choose a random agent
             agent = agents.sample(1).iloc[0]
             create_agent_post(agent)

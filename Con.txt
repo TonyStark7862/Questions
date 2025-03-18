@@ -1,0 +1,26 @@
+# Configuration for PDF RAG Application
+
+# Paths for local storage
+DATA_DIR = "./data"
+EMBEDDINGS_DIR = "./data/embeddings"
+QDRANT_DIR = "./data/qdrant_db"
+MODEL_DIR = "./models"
+LOGS_DIR = "./logs"
+TEMP_DIR = "./temp"
+
+# Model configurations
+EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
+EMBEDDING_MODEL_DIMENSIONS = 384
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 50
+
+# Retrieval settings
+TOP_K_RETRIEVALS = 4
+SIMILARITY_THRESHOLD = 0.7
+
+# Processing settings
+MAX_FILE_SIZE_MB = 25
+
+# Logging configuration
+LOG_LEVEL = "INFO"
+LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
